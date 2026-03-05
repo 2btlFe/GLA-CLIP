@@ -5,7 +5,7 @@ ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</s
 The whole contents of the code will be updated soon. 
 
 ## Abstract
-<p align="center">
+<p align="center">
   <img src="assets/main.png" width="800">
 </p>
 > A sliding-window inference strategy is commonly adopted
