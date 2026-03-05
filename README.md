@@ -4,10 +4,12 @@ ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</s
 ## Issue
 The whole contents of the code will be updated soon. 
 
-## Abstract
+## Main Figure
 <p align="center">
   <img src="assets/main.png" width="800">
 </p>
+
+## Abstract
 > A sliding-window inference strategy is commonly adopted
 in recent training-free open-vocabulary semantic segmen-
 tation methods to overcome limitation of the CLIP in pro-
