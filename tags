@@ -1,0 +1,1116 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADE20K847Dataset	custom_datasets.py	/^class ADE20K847Dataset(BaseSegDataset):$/;"	c
+Attention	open_clip/transformer.py	/^class Attention(nn.Module):$/;"	c
+Attention	segment_anything/modeling/image_encoder.py	/^class Attention(nn.Module):$/;"	c
+Attention	segment_anything/modeling/transformer.py	/^class Attention(nn.Module):$/;"	c
+AttentionPool2d	open_clip/modified_resnet.py	/^class AttentionPool2d(nn.Module):$/;"	c
+AttentionalPooler	open_clip/transformer.py	/^class AttentionalPooler(nn.Module):$/;"	c
+AugmentationCfg	open_clip/transform.py	/^class AugmentationCfg:$/;"	c
+BaseModelOutput	open_clip/hf_model.py	/^    class BaseModelOutput:$/;"	c
+Block	segment_anything/modeling/image_encoder.py	/^class Block(nn.Module):$/;"	c
+Bottleneck	open_clip/modified_resnet.py	/^class Bottleneck(nn.Module):$/;"	c
+CLIP	open_clip/model.py	/^class CLIP(nn.Module):$/;"	c
+CLIPTextCfg	open_clip/model.py	/^class CLIPTextCfg:$/;"	c
+CLIPVisionCfg	open_clip/model.py	/^class CLIPVisionCfg:$/;"	c
+COCOObjectDataset	custom_datasets.py	/^class COCOObjectDataset(BaseSegDataset):$/;"	c
+COCO_LEN	datasets/cvt_coco_object.py	/^COCO_LEN = 123287$/;"	v
+CenterCropOrPad	open_clip/transform.py	/^class CenterCropOrPad(torch.nn.Module):$/;"	c
+ClipLoss	open_clip/loss.py	/^class ClipLoss(nn.Module):$/;"	c
+ClsLastHiddenStatePooler	open_clip/hf_model.py	/^class ClsLastHiddenStatePooler(nn.Module):$/;"	c
+ClsPooler	open_clip/hf_model.py	/^class ClsPooler(nn.Module):$/;"	c
+CoCa	open_clip/coca_model.py	/^class CoCa(nn.Module):$/;"	c
+CoCaLoss	open_clip/loss.py	/^class CoCaLoss(ClipLoss):$/;"	c
+CustomResidualAttentionBlock	open_clip/transformer.py	/^class CustomResidualAttentionBlock(nn.Module):$/;"	c
+CustomTextCLIP	open_clip/model.py	/^class CustomTextCLIP(nn.Module):$/;"	c
+DEFAULT_CONTEXT_LENGTH	open_clip/tokenizer.py	/^DEFAULT_CONTEXT_LENGTH = 77  # default context length for OpenAI CLIP$/;"	v
+DistillClipLoss	open_clip/loss.py	/^class DistillClipLoss(ClipLoss):$/;"	c
+GENERATION_TYPES	open_clip/coca_model.py	/^    GENERATION_TYPES = {$/;"	v
+HFTextEncoder	open_clip/hf_model.py	/^class HFTextEncoder(nn.Module):$/;"	c
+HFTokenizer	open_clip/tokenizer.py	/^class HFTokenizer:$/;"	c
+HF_CONFIG_NAME	open_clip/push_to_hf_hub.py	/^HF_CONFIG_NAME = 'open_clip_config.json'$/;"	v
+HF_HUB_PREFIX	open_clip/factory.py	/^HF_HUB_PREFIX = 'hf-hub:'$/;"	v
+HF_SAFE_WEIGHTS_NAME	open_clip/push_to_hf_hub.py	/^HF_SAFE_WEIGHTS_NAME = "open_clip_model.safetensors"  # safetensors version$/;"	v
+HF_WEIGHTS_NAME	open_clip/push_to_hf_hub.py	/^HF_WEIGHTS_NAME = "open_clip_pytorch_model.bin"  # default pytorch pkl$/;"	v
+IMAGENET_CLASSNAMES	open_clip/zero_shot_metadata.py	/^IMAGENET_CLASSNAMES = ($/;"	v
+IMAGENET_MEAN	open_clip/constants.py	/^IMAGENET_MEAN = (0.485, 0.456, 0.406)$/;"	v
+IMAGENET_STD	open_clip/constants.py	/^IMAGENET_STD = (0.229, 0.224, 0.225)$/;"	v
+INCEPTION_MEAN	open_clip/constants.py	/^INCEPTION_MEAN = (0.5, 0.5, 0.5)$/;"	v
+INCEPTION_STD	open_clip/constants.py	/^INCEPTION_STD = (0.5, 0.5, 0.5)$/;"	v
+ImageEncoderViT	segment_anything/modeling/image_encoder.py	/^class ImageEncoderViT(nn.Module):$/;"	c
+LayerNorm	open_clip/transformer.py	/^class LayerNorm(nn.LayerNorm):$/;"	c
+LayerNorm2d	segment_anything/modeling/common.py	/^class LayerNorm2d(nn.Module):$/;"	c
+LayerNormFp32	open_clip/transformer.py	/^class LayerNormFp32(nn.LayerNorm):$/;"	c
+LayerScale	open_clip/transformer.py	/^class LayerScale(nn.Module):$/;"	c
+METAINFO	custom_datasets.py	/^    METAINFO = dict($/;"	v	class:ADE20K847Dataset
+METAINFO	custom_datasets.py	/^    METAINFO = dict($/;"	v	class:COCOObjectDataset
+METAINFO	custom_datasets.py	/^    METAINFO = dict($/;"	v	class:PascalContext459Dataset
+METAINFO	custom_datasets.py	/^    METAINFO = dict($/;"	v	class:PascalContext59Dataset
+METAINFO	custom_datasets.py	/^    METAINFO = dict($/;"	v	class:PascalContext60Dataset
+METAINFO	custom_datasets.py	/^    METAINFO = dict($/;"	v	class:PascalVOC20Dataset
+MLP	segment_anything/modeling/mask_decoder.py	/^class MLP(nn.Module):$/;"	c
+MLPBlock	segment_anything/modeling/common.py	/^class MLPBlock(nn.Module):$/;"	c
+MaskData	segment_anything/utils/amg.py	/^class MaskData:$/;"	c
+MaskDecoder	segment_anything/modeling/mask_decoder.py	/^class MaskDecoder(nn.Module):$/;"	c
+MaxPooler	open_clip/hf_model.py	/^class MaxPooler(nn.Module):$/;"	c
+MeanPooler	open_clip/hf_model.py	/^class MeanPooler(nn.Module):$/;"	c
+ModifiedResNet	open_clip/modified_resnet.py	/^class ModifiedResNet(nn.Module):$/;"	c
+MultimodalCfg	open_clip/coca_model.py	/^class MultimodalCfg(CLIPTextCfg):$/;"	c
+MultimodalTransformer	open_clip/transformer.py	/^class MultimodalTransformer(Transformer):$/;"	c
+MyLoadAnnotations	custom_datasets.py	/^class MyLoadAnnotations(MMCV_LoadAnnotations):$/;"	c
+NeighbourExchange	open_clip/loss.py	/^class NeighbourExchange(torch.autograd.Function):$/;"	c
+NeighbourExchangeBidir	open_clip/loss.py	/^class NeighbourExchangeBidir(torch.autograd.Function):$/;"	c
+OPENAI_DATASET_MEAN	open_clip/constants.py	/^OPENAI_DATASET_MEAN = (0.48145466, 0.4578275, 0.40821073)$/;"	v
+OPENAI_DATASET_STD	open_clip/constants.py	/^OPENAI_DATASET_STD = (0.26862954, 0.26130258, 0.27577711)$/;"	v
+OPENAI_IMAGENET_TEMPLATES	open_clip/zero_shot_metadata.py	/^OPENAI_IMAGENET_TEMPLATES = ($/;"	v
+PascalContext459Dataset	custom_datasets.py	/^class PascalContext459Dataset(BaseSegDataset):$/;"	c
+PascalContext59Dataset	custom_datasets.py	/^class PascalContext59Dataset(BaseSegDataset):$/;"	c
+PascalContext60Dataset	custom_datasets.py	/^class PascalContext60Dataset(BaseSegDataset):$/;"	c
+PascalVOC20Dataset	custom_datasets.py	/^class PascalVOC20Dataset(BaseSegDataset):$/;"	c
+PatchDropout	open_clip/transformer.py	/^class PatchDropout(nn.Module):$/;"	c
+PatchEmbed	segment_anything/modeling/image_encoder.py	/^class PatchEmbed(nn.Module):$/;"	c
+PositionEmbeddingRandom	segment_anything/modeling/prompt_encoder.py	/^class PositionEmbeddingRandom(nn.Module):$/;"	c
+PreprocessCfg	open_clip/transform.py	/^class PreprocessCfg:$/;"	c
+PretrainedConfig	open_clip/hf_model.py	/^    class PretrainedConfig:$/;"	c
+PromptEncoder	segment_anything/modeling/prompt_encoder.py	/^class PromptEncoder(nn.Module):$/;"	c
+ProxyCLIPSegmentation	proxyclip_segmentor.py	/^class ProxyCLIPSegmentation(BaseSegmentor):$/;"	c
+QuickGELU	open_clip/transformer.py	/^class QuickGELU(nn.Module):$/;"	c
+ResidualAttentionBlock	open_clip/transformer.py	/^class ResidualAttentionBlock(nn.Module):$/;"	c
+ResizeKeepRatio	open_clip/transform.py	/^class ResizeKeepRatio:$/;"	c
+ResizeLongestSide	segment_anything/utils/transforms.py	/^class ResizeLongestSide:$/;"	c
+SIMPLE_IMAGENET_TEMPLATES	open_clip/zero_shot_metadata.py	/^SIMPLE_IMAGENET_TEMPLATES = ($/;"	v
+Sam	segment_anything/modeling/sam.py	/^class Sam(nn.Module):$/;"	c
+SamAutomaticMaskGenerator	segment_anything/automatic_mask_generator.py	/^class SamAutomaticMaskGenerator:$/;"	c
+SamOnnxModel	segment_anything/utils/onnx.py	/^class SamOnnxModel(nn.Module):$/;"	c
+SamPredictor	segment_anything/predictor.py	/^class SamPredictor:$/;"	c
+SigLipLoss	open_clip/loss.py	/^class SigLipLoss(nn.Module):$/;"	c
+SigLipTokenizer	open_clip/tokenizer.py	/^class SigLipTokenizer:$/;"	c
+SimpleTokenizer	open_clip/tokenizer.py	/^class SimpleTokenizer(object):$/;"	c
+TextTransformer	open_clip/transformer.py	/^class TextTransformer(nn.Module):$/;"	c
+TimmModel	open_clip/timm_model.py	/^class TimmModel(nn.Module):$/;"	c
+Transformer	open_clip/transformer.py	/^class Transformer(nn.Module):$/;"	c
+TwoWayAttentionBlock	segment_anything/modeling/transformer.py	/^class TwoWayAttentionBlock(nn.Module):$/;"	c
+TwoWayTransformer	segment_anything/modeling/transformer.py	/^class TwoWayTransformer(nn.Module):$/;"	c
+UnNormalize	myutils.py	/^class UnNormalize(object):$/;"	c
+VOCAB_FILES	open_clip/tokenizer.py	/^    VOCAB_FILES = {$/;"	v	class:SigLipTokenizer
+VisionTransformer	mae/models_vit.py	/^class VisionTransformer(timm.models.vision_transformer.VisionTransformer):$/;"	c
+VisionTransformer	open_clip/transformer.py	/^class VisionTransformer(nn.Module):$/;"	c
+_MODEL_CONFIGS	open_clip/factory.py	/^_MODEL_CONFIGS = {}  # directory (model_name: config) of model architecture configs$/;"	v
+_MODEL_CONFIG_PATHS	open_clip/factory.py	/^_MODEL_CONFIG_PATHS = [Path(__file__).parent \/ f"model_configs\/"]$/;"	v
+_POOLERS	open_clip/hf_model.py	/^_POOLERS = {}$/;"	v
+_PREPROCESS_KEYS	open_clip/transform.py	/^_PREPROCESS_KEYS = set(asdict(PreprocessCfg()).keys())$/;"	v
+_PRETRAINED	open_clip/pretrained.py	/^_PRETRAINED = {$/;"	v
+_RN101	open_clip/pretrained.py	/^_RN101 = dict($/;"	v
+_RN101_quickgelu	open_clip/pretrained.py	/^_RN101_quickgelu = dict($/;"	v
+_RN50	open_clip/pretrained.py	/^_RN50 = dict($/;"	v
+_RN50_quickgelu	open_clip/pretrained.py	/^_RN50_quickgelu = dict($/;"	v
+_RN50x16	open_clip/pretrained.py	/^_RN50x16 = dict($/;"	v
+_RN50x4	open_clip/pretrained.py	/^_RN50x4 = dict($/;"	v
+_RN50x64	open_clip/pretrained.py	/^_RN50x64 = dict($/;"	v
+_VITB16	open_clip/pretrained.py	/^_VITB16 = dict($/;"	v
+_VITB16_PLUS_240	open_clip/pretrained.py	/^_VITB16_PLUS_240 = dict($/;"	v
+_VITB16_quickgelu	open_clip/pretrained.py	/^_VITB16_quickgelu = dict($/;"	v
+_VITB32	open_clip/pretrained.py	/^_VITB32 = dict($/;"	v
+_VITB32_256	open_clip/pretrained.py	/^_VITB32_256 = dict($/;"	v
+_VITB32_quickgelu	open_clip/pretrained.py	/^_VITB32_quickgelu = dict($/;"	v
+_VITH14	open_clip/pretrained.py	/^_VITH14 = dict($/;"	v
+_VITH14_378_quickgelu	open_clip/pretrained.py	/^_VITH14_378_quickgelu = dict($/;"	v
+_VITH14_quickgelu	open_clip/pretrained.py	/^_VITH14_quickgelu = dict($/;"	v
+_VITL14	open_clip/pretrained.py	/^_VITL14 = dict($/;"	v
+_VITL14_336	open_clip/pretrained.py	/^_VITL14_336 = dict($/;"	v
+_VITL14_quickgelu	open_clip/pretrained.py	/^_VITL14_quickgelu = dict($/;"	v
+_VITbigG14	open_clip/pretrained.py	/^_VITbigG14 = dict($/;"	v
+_VITg14	open_clip/pretrained.py	/^_VITg14 = dict($/;"	v
+__all__	open_clip/openai.py	/^__all__ = ["list_openai_models", "load_openai_model"]$/;"	v
+__call__	myutils.py	/^    def __call__(self, image):$/;"	m	class:UnNormalize	file:
+__call__	open_clip/tokenizer.py	/^    def __call__(self, texts: Union[str, List[str]], context_length: Optional[int] = None) -> torch.LongTensor:$/;"	m	class:SimpleTokenizer	file:
+__call__	open_clip/tokenizer.py	/^    def __call__(self, texts: Union[str, List[str]], context_length: Optional[int] = None) -> torch.Tensor:$/;"	m	class:HFTokenizer	file:
+__call__	open_clip/tokenizer.py	/^    def __call__(self, texts: Union[str, List[str]], context_length: Optional[int] = None) -> torch.Tensor:$/;"	m	class:SigLipTokenizer	file:
+__call__	open_clip/transform.py	/^    def __call__(self, img):$/;"	m	class:ResizeKeepRatio	file:
+__call__	open_clip/transform.py	/^    def __call__(self, img):$/;"	m	class:color_jitter	file:
+__call__	open_clip/transform.py	/^    def __call__(self, img):$/;"	m	class:gray_scale	file:
+__delitem__	segment_anything/utils/amg.py	/^    def __delitem__(self, key: str) -> None:$/;"	m	class:MaskData	file:
+__getitem__	segment_anything/utils/amg.py	/^    def __getitem__(self, key: str) -> Any:$/;"	m	class:MaskData	file:
+__init__	custom_datasets.py	/^    def __init__($/;"	m	class:MyLoadAnnotations
+__init__	custom_datasets.py	/^    def __init__(self, **kwargs):$/;"	m	class:COCOObjectDataset
+__init__	custom_datasets.py	/^    def __init__(self,$/;"	m	class:ADE20K847Dataset
+__init__	custom_datasets.py	/^    def __init__(self,$/;"	m	class:PascalContext459Dataset
+__init__	custom_datasets.py	/^    def __init__(self,$/;"	m	class:PascalContext59Dataset
+__init__	custom_datasets.py	/^    def __init__(self,$/;"	m	class:PascalContext60Dataset
+__init__	custom_datasets.py	/^    def __init__(self,$/;"	m	class:PascalVOC20Dataset
+__init__	mae/models_vit.py	/^    def __init__(self, global_pool=False, **kwargs):$/;"	m	class:VisionTransformer
+__init__	myutils.py	/^    def __init__(self, mean, std):$/;"	m	class:UnNormalize
+__init__	open_clip/coca_model.py	/^    def __init__($/;"	m	class:CoCa
+__init__	open_clip/hf_model.py	/^    def __init__($/;"	m	class:HFTextEncoder
+__init__	open_clip/hf_model.py	/^    def __init__(self):$/;"	m	class:ClsLastHiddenStatePooler
+__init__	open_clip/hf_model.py	/^    def __init__(self, use_pooler_output=True):$/;"	m	class:ClsPooler
+__init__	open_clip/loss.py	/^    def __init__($/;"	m	class:ClipLoss
+__init__	open_clip/loss.py	/^    def __init__($/;"	m	class:CoCaLoss
+__init__	open_clip/loss.py	/^    def __init__($/;"	m	class:SigLipLoss
+__init__	open_clip/model.py	/^    def __init__($/;"	m	class:CLIP
+__init__	open_clip/model.py	/^    def __init__($/;"	m	class:CustomTextCLIP
+__init__	open_clip/modified_resnet.py	/^    def __init__(self, inplanes, planes, stride=1):$/;"	m	class:Bottleneck
+__init__	open_clip/modified_resnet.py	/^    def __init__(self, layers, output_dim, heads, image_size=224, width=64):$/;"	m	class:ModifiedResNet
+__init__	open_clip/modified_resnet.py	/^    def __init__(self, spacial_dim: int, embed_dim: int, num_heads: int, output_dim: int = None):$/;"	m	class:AttentionPool2d
+__init__	open_clip/timm_model.py	/^    def __init__($/;"	m	class:TimmModel
+__init__	open_clip/tokenizer.py	/^    def __init__($/;"	m	class:HFTokenizer
+__init__	open_clip/tokenizer.py	/^    def __init__($/;"	m	class:SigLipTokenizer
+__init__	open_clip/tokenizer.py	/^    def __init__($/;"	m	class:SimpleTokenizer
+__init__	open_clip/transform.py	/^    def __init__($/;"	m	class:ResizeKeepRatio
+__init__	open_clip/transform.py	/^    def __init__(self, brightness=0., contrast=0., saturation=0., hue=0., p=0.8):$/;"	m	class:color_jitter
+__init__	open_clip/transform.py	/^    def __init__(self, p=0.2):$/;"	m	class:gray_scale
+__init__	open_clip/transform.py	/^    def __init__(self, size, fill=0):$/;"	m	class:CenterCropOrPad
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:Attention
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:AttentionalPooler
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:CustomResidualAttentionBlock
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:MultimodalTransformer
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:ResidualAttentionBlock
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:TextTransformer
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:Transformer
+__init__	open_clip/transformer.py	/^    def __init__($/;"	m	class:VisionTransformer
+__init__	open_clip/transformer.py	/^    def __init__(self, dim, init_values=1e-5, inplace=False):$/;"	m	class:LayerScale
+__init__	open_clip/transformer.py	/^    def __init__(self, prob, exclude_first_token=True):$/;"	m	class:PatchDropout
+__init__	proxyclip_segmentor.py	/^    def __init__(self, clip_type, model_type, vfm_model, name_path, checkpoint=None, device=torch.device('cuda'),$/;"	m	class:ProxyCLIPSegmentation
+__init__	segment_anything/automatic_mask_generator.py	/^    def __init__($/;"	m	class:SamAutomaticMaskGenerator
+__init__	segment_anything/modeling/common.py	/^    def __init__($/;"	m	class:MLPBlock
+__init__	segment_anything/modeling/common.py	/^    def __init__(self, num_channels: int, eps: float = 1e-6) -> None:$/;"	m	class:LayerNorm2d
+__init__	segment_anything/modeling/image_encoder.py	/^    def __init__($/;"	m	class:Attention
+__init__	segment_anything/modeling/image_encoder.py	/^    def __init__($/;"	m	class:Block
+__init__	segment_anything/modeling/image_encoder.py	/^    def __init__($/;"	m	class:ImageEncoderViT
+__init__	segment_anything/modeling/image_encoder.py	/^    def __init__($/;"	m	class:PatchEmbed
+__init__	segment_anything/modeling/mask_decoder.py	/^    def __init__($/;"	m	class:MLP
+__init__	segment_anything/modeling/mask_decoder.py	/^    def __init__($/;"	m	class:MaskDecoder
+__init__	segment_anything/modeling/prompt_encoder.py	/^    def __init__($/;"	m	class:PromptEncoder
+__init__	segment_anything/modeling/prompt_encoder.py	/^    def __init__(self, num_pos_feats: int = 64, scale: Optional[float] = None) -> None:$/;"	m	class:PositionEmbeddingRandom
+__init__	segment_anything/modeling/sam.py	/^    def __init__($/;"	m	class:Sam
+__init__	segment_anything/modeling/transformer.py	/^    def __init__($/;"	m	class:Attention
+__init__	segment_anything/modeling/transformer.py	/^    def __init__($/;"	m	class:TwoWayAttentionBlock
+__init__	segment_anything/modeling/transformer.py	/^    def __init__($/;"	m	class:TwoWayTransformer
+__init__	segment_anything/predictor.py	/^    def __init__($/;"	m	class:SamPredictor
+__init__	segment_anything/utils/amg.py	/^    def __init__(self, **kwargs) -> None:$/;"	m	class:MaskData
+__init__	segment_anything/utils/onnx.py	/^    def __init__($/;"	m	class:SamOnnxModel
+__init__	segment_anything/utils/transforms.py	/^    def __init__(self, target_length: int) -> None:$/;"	m	class:ResizeLongestSide
+__post_init__	open_clip/transform.py	/^    def __post_init__(self):$/;"	m	class:PreprocessCfg	file:
+__repr__	custom_datasets.py	/^    def __repr__(self) -> str:$/;"	m	class:MyLoadAnnotations	file:
+__repr__	open_clip/transform.py	/^    def __repr__(self) -> str:$/;"	m	class:CenterCropOrPad	file:
+__repr__	open_clip/transform.py	/^    def __repr__(self):$/;"	m	class:ResizeKeepRatio	file:
+__setitem__	segment_anything/utils/amg.py	/^    def __setitem__(self, key: str, item: Any) -> None:$/;"	m	class:MaskData	file:
+__version__	open_clip/version.py	/^__version__ = '2.24.0'$/;"	v
+_apcfg	open_clip/pretrained.py	/^def _apcfg(url='', hf_hub='', **kwargs):$/;"	f
+_base_	configs/cfg_ade20k.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_ade847.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_city_scapes.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_coco_object.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_coco_stuff164k.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_context459.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_context59.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_context60.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_voc20.py	/^_base_ = '.\/base_config.py'$/;"	v
+_base_	configs/cfg_voc21.py	/^_base_ = '.\/base_config.py'$/;"	v
+_build_sam	segment_anything/build_sam.py	/^def _build_sam($/;"	f
+_build_text_decoder_tower	open_clip/coca_model.py	/^def _build_text_decoder_tower($/;"	f
+_build_text_tower	open_clip/model.py	/^def _build_text_tower($/;"	f
+_build_vision_tower	open_clip/model.py	/^def _build_vision_tower($/;"	f
+_camel2snake	open_clip/hf_model.py	/^def _camel2snake(s):$/;"	f
+_clean_canonicalize	open_clip/tokenizer.py	/^def _clean_canonicalize(x):$/;"	f
+_clean_lower	open_clip/tokenizer.py	/^def _clean_lower(x):$/;"	f
+_clean_tag	open_clip/pretrained.py	/^def _clean_tag(tag: str):$/;"	f
+_clean_whitespace	open_clip/tokenizer.py	/^def _clean_whitespace(x):$/;"	f
+_coca_VITB32	open_clip/pretrained.py	/^_coca_VITB32 = dict($/;"	v
+_coca_VITL14	open_clip/pretrained.py	/^_coca_VITL14 = dict($/;"	v
+_convert_ln	open_clip/factory.py	/^                def _convert_ln(m):$/;"	f	function:create_model
+_convert_openclip_transformer	open_clip/big_vision.py	/^    def _convert_openclip_transformer(module: Transformer, prefix):$/;"	f	function:load_big_vision_weights
+_convert_openclip_txt	open_clip/big_vision.py	/^    def _convert_openclip_txt(module: TextTransformer, prefix):$/;"	f	function:load_big_vision_weights
+_convert_timm_img	open_clip/big_vision.py	/^    def _convert_timm_img(module, prefix):$/;"	f	function:load_big_vision_weights
+_convert_to_rgb	open_clip/transform.py	/^def _convert_to_rgb(image):$/;"	f
+_convert_weights	open_clip/model.py	/^    def _convert_weights(l):$/;"	f	function:convert_weights_to_lp
+_convnext_base	open_clip/pretrained.py	/^_convnext_base = dict($/;"	v
+_convnext_base_w	open_clip/pretrained.py	/^_convnext_base_w = dict($/;"	v
+_convnext_base_w_320	open_clip/pretrained.py	/^_convnext_base_w_320 = dict($/;"	v
+_convnext_large_d	open_clip/pretrained.py	/^_convnext_large_d = dict($/;"	v
+_convnext_large_d_320	open_clip/pretrained.py	/^_convnext_large_d_320 = dict($/;"	v
+_convnext_xxlarge	open_clip/pretrained.py	/^_convnext_xxlarge = dict($/;"	v
+_embed_boxes	segment_anything/modeling/prompt_encoder.py	/^    def _embed_boxes(self, boxes: torch.Tensor) -> torch.Tensor:$/;"	m	class:PromptEncoder
+_embed_masks	segment_anything/modeling/prompt_encoder.py	/^    def _embed_masks(self, masks: torch.Tensor) -> torch.Tensor:$/;"	m	class:PromptEncoder
+_embed_masks	segment_anything/utils/onnx.py	/^    def _embed_masks(self, input_mask: torch.Tensor, has_mask_input: torch.Tensor) -> torch.Tensor:$/;"	m	class:SamOnnxModel
+_embed_points	segment_anything/modeling/prompt_encoder.py	/^    def _embed_points($/;"	m	class:PromptEncoder
+_embed_points	segment_anything/utils/onnx.py	/^    def _embed_points(self, point_coords: torch.Tensor, point_labels: torch.Tensor) -> torch.Tensor:$/;"	m	class:SamOnnxModel
+_encode_image	open_clip/coca_model.py	/^    def _encode_image(self, images, normalize: bool = True):$/;"	m	class:CoCa
+_encode_text	open_clip/coca_model.py	/^    def _encode_text(self, text, normalize: bool = True):$/;"	m	class:CoCa
+_expand_token	open_clip/transformer.py	/^def _expand_token(token, batch_size: int):$/;"	f
+_forward	proxyclip_segmentor.py	/^    def _forward(data_samples):$/;"	m	class:ProxyCLIPSegmentation
+_generate_beamsearch	open_clip/coca_model.py	/^    def _generate_beamsearch($/;"	m	class:CoCa
+_generate_masks	segment_anything/automatic_mask_generator.py	/^    def _generate_masks(self, image: np.ndarray) -> MaskData:$/;"	m	class:SamAutomaticMaskGenerator
+_get_batch_size	segment_anything/modeling/prompt_encoder.py	/^    def _get_batch_size($/;"	m	class:PromptEncoder
+_get_device	segment_anything/modeling/prompt_encoder.py	/^    def _get_device(self) -> torch.device:$/;"	m	class:PromptEncoder
+_get_hf_config	open_clip/factory.py	/^def _get_hf_config(model_id, cache_dir=None):$/;"	f
+_global_pool	open_clip/transformer.py	/^    def _global_pool(self, x: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:$/;"	m	class:VisionTransformer
+_has_hf_hub	open_clip/pretrained.py	/^    _has_hf_hub = False$/;"	v
+_has_hf_hub	open_clip/pretrained.py	/^    _has_hf_hub = True$/;"	v
+_has_hf_hub	open_clip/push_to_hf_hub.py	/^    _has_hf_hub = False$/;"	v
+_has_hf_hub	open_clip/push_to_hf_hub.py	/^    _has_hf_hub = True$/;"	v
+_has_safetensors	open_clip/push_to_hf_hub.py	/^    _has_safetensors = False$/;"	v
+_has_safetensors	open_clip/push_to_hf_hub.py	/^    _has_safetensors = True$/;"	v
+_has_transformers	open_clip/coca_model.py	/^    _has_transformers = False$/;"	v
+_has_transformers	open_clip/coca_model.py	/^    _has_transformers = True$/;"	v
+_load_seg_map	custom_datasets.py	/^    def _load_seg_map(self, results: dict) -> None:$/;"	m	class:MyLoadAnnotations
+_loss	open_clip/loss.py	/^    def _loss(self, image_features, text_features, logit_scale, logit_bias=None, negative_only=False):$/;"	m	class:SigLipLoss
+_make_layer	open_clip/modified_resnet.py	/^    def _make_layer(self, planes, blocks, stride=1):$/;"	m	class:ModifiedResNet
+_n2p	open_clip/big_vision.py	/^    def _n2p(w, t=True):$/;"	f	function:load_big_vision_weights
+_natural_key	open_clip/factory.py	/^def _natural_key(string_):$/;"	f
+_nltk_init	open_clip/tokenizer.py	/^_nltk_init = False$/;"	v
+_ntuple	open_clip/utils.py	/^def _ntuple(n):$/;"	f
+_pcfg	open_clip/pretrained.py	/^def _pcfg(url='', hf_hub='', **kwargs):$/;"	f
+_pe_encoding	segment_anything/modeling/prompt_encoder.py	/^    def _pe_encoding(self, coords: torch.Tensor) -> torch.Tensor:$/;"	m	class:PositionEmbeddingRandom
+_process_batch	open_clip/zero_shot_classifier.py	/^    def _process_batch(batch_classnames):$/;"	f	function:build_zero_shot_classifier
+_process_batch	segment_anything/automatic_mask_generator.py	/^    def _process_batch($/;"	m	class:SamAutomaticMaskGenerator
+_process_crop	segment_anything/automatic_mask_generator.py	/^    def _process_crop($/;"	m	class:SamAutomaticMaskGenerator
+_recombine_heads	segment_anything/modeling/transformer.py	/^    def _recombine_heads(self, x: Tensor) -> Tensor:$/;"	m	class:Attention
+_rescan_model_configs	open_clip/factory.py	/^def _rescan_model_configs():$/;"	f
+_robertaViTB32	open_clip/pretrained.py	/^_robertaViTB32 = dict($/;"	v
+_separate_heads	segment_anything/modeling/transformer.py	/^    def _separate_heads(self, x: Tensor, num_heads: int) -> Tensor:$/;"	m	class:Attention
+_setup_size	open_clip/transform.py	/^def _setup_size(size, error_msg):$/;"	f
+_slpcfg	open_clip/pretrained.py	/^def _slpcfg(url='', hf_hub='', **kwargs):$/;"	f
+_tokenizer	open_clip/tokenizer.py	/^_tokenizer = SimpleTokenizer()$/;"	v
+_unlock	open_clip/transformer.py	/^            def _unlock(x):$/;"	f	function:VisionTransformer.lock
+_xlmRobertaBaseViTB32	open_clip/pretrained.py	/^_xlmRobertaBaseViTB32 = dict($/;"	v
+_xlmRobertaLargeFrozenViTH14	open_clip/pretrained.py	/^_xlmRobertaLargeFrozenViTH14 = dict($/;"	v
+action	open_clip/push_to_hf_hub.py	/^        action="store_true",$/;"	v
+add_decomposed_rel_pos	segment_anything/modeling/image_encoder.py	/^def add_decomposed_rel_pos($/;"	f
+add_model_config	open_clip/factory.py	/^def add_model_config(path):$/;"	f
+all_image_features	open_clip/loss.py	/^                all_image_features = hvd.allgather(image_features)$/;"	v
+all_image_features	open_clip/loss.py	/^                all_image_features = torch.cat(gathered_image_features, dim=0)$/;"	v
+all_image_features	open_clip/loss.py	/^            all_image_features = hvd.allgather(image_features)$/;"	v
+all_image_features	open_clip/loss.py	/^            all_image_features = torch.cat(gathered_image_features, dim=0)$/;"	v
+all_image_features	open_clip/loss.py	/^            all_image_features = torch.cat(torch.distributed.nn.all_gather(image_features), dim=0)$/;"	v
+all_text_features	open_clip/loss.py	/^                all_text_features = hvd.allgather(text_features)$/;"	v
+all_text_features	open_clip/loss.py	/^                all_text_features = torch.cat(gathered_text_features, dim=0)$/;"	v
+all_text_features	open_clip/loss.py	/^            all_text_features = hvd.allgather(text_features)$/;"	v
+all_text_features	open_clip/loss.py	/^            all_text_features = torch.cat(gathered_text_features, dim=0)$/;"	v
+all_text_features	open_clip/loss.py	/^            all_text_features = torch.cat(torch.distributed.nn.all_gather(text_features), dim=0)$/;"	v
+alpha	work_dirs/20241129_081530/vis_data/config.py	/^    alpha=1.0,$/;"	v
+alpha	work_dirs/20241129_081906/vis_data/config.py	/^    alpha=1.0,$/;"	v
+alpha	work_dirs/cfg_city_scapes.py	/^    alpha=1.0,$/;"	v
+ann_file	configs/cfg_ade847.py	/^        ann_file='validation.txt',$/;"	v
+ann_file	configs/cfg_context459.py	/^        ann_file='ImageSets\/SegmentationContext\/val.txt',$/;"	v
+ann_file	configs/cfg_context59.py	/^        ann_file='ImageSets\/SegmentationContext\/val.txt',$/;"	v
+ann_file	configs/cfg_context60.py	/^        ann_file='ImageSets\/SegmentationContext\/val.txt',$/;"	v
+ann_file	configs/cfg_voc20.py	/^        ann_file='ImageSets\/Segmentation\/val.txt',$/;"	v
+ann_file	configs/cfg_voc21.py	/^        ann_file='ImageSets\/Segmentation\/val.txt',$/;"	v
+append_experiment_result	myutils.py	/^def append_experiment_result(file_path, experiment_data):$/;"	f
+apply_boxes	segment_anything/utils/transforms.py	/^    def apply_boxes(self, boxes: np.ndarray, original_size: Tuple[int, ...]) -> np.ndarray:$/;"	m	class:ResizeLongestSide
+apply_boxes_torch	segment_anything/utils/transforms.py	/^    def apply_boxes_torch($/;"	m	class:ResizeLongestSide
+apply_coords	segment_anything/utils/transforms.py	/^    def apply_coords(self, coords: np.ndarray, original_size: Tuple[int, ...]) -> np.ndarray:$/;"	m	class:ResizeLongestSide
+apply_coords_torch	segment_anything/utils/transforms.py	/^    def apply_coords_torch($/;"	m	class:ResizeLongestSide
+apply_image	segment_anything/utils/transforms.py	/^    def apply_image(self, image: np.ndarray) -> np.ndarray:$/;"	m	class:ResizeLongestSide
+apply_image_torch	segment_anything/utils/transforms.py	/^    def apply_image_torch(self, image: torch.Tensor) -> torch.Tensor:$/;"	m	class:ResizeLongestSide
+arch_dict	open_clip/hf_configs.py	/^arch_dict = {$/;"	v
+area_from_rle	segment_anything/utils/amg.py	/^def area_from_rle(rle: Dict[str, Any]) -> int:$/;"	f
+args	open_clip/push_to_hf_hub.py	/^    args = parser.parse_args()$/;"	v
+attention	open_clip/transformer.py	/^    def attention($/;"	m	class:ResidualAttentionBlock
+backward	open_clip/loss.py	/^    def backward(ctx, *grad_outputs):$/;"	m	class:NeighbourExchangeBidir
+backward	open_clip/loss.py	/^    def backward(ctx, grad_output):$/;"	m	class:NeighbourExchange
+basic_clean	open_clip/tokenizer.py	/^def basic_clean(text):$/;"	f
+batch_iterator	segment_anything/utils/amg.py	/^def batch_iterator(batch_size: int, *args) -> Generator[List[Any], None, None]:$/;"	f
+batch_size	configs/cfg_ade20k.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_ade847.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_city_scapes.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_coco_object.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_coco_stuff164k.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_context459.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_context59.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_context60.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_voc20.py	/^    batch_size=1,$/;"	v
+batch_size	configs/cfg_voc21.py	/^    batch_size=1,$/;"	v
+batch_size	work_dirs/20241129_081530/vis_data/config.py	/^    batch_size=1,$/;"	v
+batch_size	work_dirs/20241129_081906/vis_data/config.py	/^    batch_size=1,$/;"	v
+batch_size	work_dirs/cfg_city_scapes.py	/^    batch_size=1,$/;"	v
+batched	open_clip/zero_shot_classifier.py	/^def batched(iterable, n):$/;"	f
+batched_mask_to_box	segment_anything/utils/amg.py	/^def batched_mask_to_box(masks: torch.Tensor) -> torch.Tensor:$/;"	f
+box_xyxy_to_xywh	segment_anything/utils/amg.py	/^def box_xyxy_to_xywh(box_xyxy: torch.Tensor) -> torch.Tensor:$/;"	f
+bpe	open_clip/tokenizer.py	/^    def bpe(self, token):$/;"	m	class:SimpleTokenizer
+build_all_layer_point_grids	segment_anything/utils/amg.py	/^def build_all_layer_point_grids($/;"	f
+build_attention_mask	open_clip/transformer.py	/^    def build_attention_mask(self):$/;"	m	class:MultimodalTransformer
+build_causal_mask	open_clip/transformer.py	/^    def build_causal_mask(self):$/;"	m	class:TextTransformer
+build_cls_mask	open_clip/transformer.py	/^    def build_cls_mask(self, text, cast_dtype: torch.dtype):$/;"	m	class:TextTransformer
+build_model_from_openai_state_dict	open_clip/model.py	/^def build_model_from_openai_state_dict($/;"	f
+build_point_grid	segment_anything/utils/amg.py	/^def build_point_grid(n_per_side: int) -> np.ndarray:$/;"	f
+build_sam	segment_anything/build_sam.py	/^build_sam = build_sam_vit_h$/;"	v
+build_sam_vit_b	segment_anything/build_sam.py	/^def build_sam_vit_b(checkpoint=None):$/;"	f
+build_sam_vit_h	segment_anything/build_sam.py	/^def build_sam_vit_h(checkpoint=None):$/;"	f
+build_sam_vit_l	segment_anything/build_sam.py	/^def build_sam_vit_l(checkpoint=None):$/;"	f
+build_zero_shot_classifier	open_clip/zero_shot_classifier.py	/^def build_zero_shot_classifier($/;"	f
+build_zero_shot_classifier_legacy	open_clip/zero_shot_classifier.py	/^def build_zero_shot_classifier_legacy($/;"	f
+bytes_to_unicode	open_clip/tokenizer.py	/^def bytes_to_unicode():$/;"	f
+cached_file	open_clip/pretrained.py	/^    cached_file = hf_hub_download(model_id, filename, revision=revision, cache_dir=cache_dir)$/;"	v
+calculate_stability_score	segment_anything/utils/amg.py	/^def calculate_stability_score($/;"	f
+canonicalize_text	open_clip/tokenizer.py	/^def canonicalize_text(text, *, keep_punctuation_exact_string=None):$/;"	f
+cast_dtype	open_clip/model.py	/^        cast_dtype=cast_dtype,$/;"	v
+cat	segment_anything/utils/amg.py	/^    def cat(self, new_stats: "MaskData") -> None:$/;"	m	class:MaskData
+cc12m	open_clip/pretrained.py	/^    cc12m=_pcfg($/;"	v
+center_crop_or_pad	open_clip/transform.py	/^def center_crop_or_pad(img: torch.Tensor, output_size: List[int], fill=0) -> torch.Tensor:$/;"	f
+checkpoint	configs/base_config.py	/^    checkpoint=None,$/;"	v
+checkpoint	configs/base_config.py	/^    checkpoint=dict(type='CheckpointHook', by_epoch=False, interval=2000),$/;"	v
+checkpoint	work_dirs/20241129_081530/vis_data/config.py	/^    checkpoint=None,$/;"	v
+checkpoint	work_dirs/20241129_081530/vis_data/config.py	/^    checkpoint=dict(by_epoch=False, interval=2000, type='CheckpointHook'),$/;"	v
+checkpoint	work_dirs/20241129_081906/vis_data/config.py	/^    checkpoint=None,$/;"	v
+checkpoint	work_dirs/20241129_081906/vis_data/config.py	/^    checkpoint=dict(by_epoch=False, interval=2000, type='CheckpointHook'),$/;"	v
+checkpoint	work_dirs/cfg_city_scapes.py	/^    checkpoint=None,$/;"	v
+checkpoint	work_dirs/cfg_city_scapes.py	/^    checkpoint=dict(by_epoch=False, interval=2000, type='CheckpointHook'),$/;"	v
+classes	custom_datasets.py	/^        classes=("accordion", "aeroplane", "airconditioner", "antenna", "artillery", "ashtray", "atrium",$/;"	v	class:PascalContext459Dataset
+classes	custom_datasets.py	/^        classes=("wall", "building, edifice", "sky", "tree", "road, route", "floor, flooring", "ceiling", "bed", "sidewalk, pavement", "earth, ground", "cabinet", "person, individual, someone, somebody, mortal, soul", "grass", "windowpane, window", "car, auto, automobile, machine, motorcar", "mountain, mount", "plant, flora, plant life", "table", "chair", "curtain, drape, drapery, mantle, pall", "door", "sofa, couch, lounge", "sea", "painting, picture", "water", "mirror", "house", "rug, carpet, carpeting", "shelf", "armchair", "fence, fencing", "field", "lamp", "rock, stone", "seat", "river", "desk", "bathtub, bathing tub, bath, tub", "railing, rail", "signboard, sign", "cushion", "path", "work surface", "stairs, steps", "column, pillar", "sink", "wardrobe, closet, press", "snow", "refrigerator, icebox", "base, pedestal, stand", "bridge, span", "blind, screen", "runway", "cliff, drop, drop-off", "sand", "fireplace, hearth, open fireplace", "pillow", "screen door, screen", "toilet, can, commode, crapper, pot, potty, stool, throne", "skyscraper", "grandstand, covered stand", "box", "pool table, billiard table, snooker table", "palm, palm tree", "double door", "coffee table, cocktail table", "counter", "countertop", "chest of drawers, chest, bureau, dresser", "kitchen island", "boat", "waterfall, falls", "stove, kitchen stove, range, kitchen range, cooking stove", "flower", "bookcase", "controls", "book", "stairway, staircase", "streetlight, street lamp", "computer, computing machine, computing device, data processor, electronic computer, information processing system", "bus, autobus, coach, charabanc, double-decker, jitney, motorbus, motorcoach, omnibus, passenger vehicle", "swivel chair", "light, light source", "bench", "case, display case, showcase, vitrine", "towel", "fountain", "embankment", "television receiver, television, television set, tv, tv set, idiot box, boob tube, telly, goggle box", "van", "hill", "awning, sunshade, sunblind", "poster, posting, placard, notice, bill, card", "truck, motortruck", "airplane, aeroplane, plane", "pole", "tower", "court", "ball", "aircraft carrier, carrier, flattop, attack aircraft carrier", "buffet, counter, sideboard", "hovel, hut, hutch, shack, shanty", "apparel, wearing apparel, dress, clothes", "minibike, motorbike", "animal, animate being, beast, brute, creature, fauna", "chandelier, pendant, pendent", "step, stair", "booth, cubicle, stall, kiosk", "bicycle, bike, wheel, cycle", "doorframe, doorcase", "sconce", "pond", "trade name, brand name, brand, marque", "bannister, banister, balustrade, balusters, handrail", "bag", "traffic light, traffic signal, stoplight", "gazebo", "escalator, moving staircase, moving stairway", "land, ground, soil", "board, plank", "arcade machine", "eiderdown, duvet, continental quilt", "bar", "stall, stand, sales booth", "playground", "ship", "ottoman, pouf, pouffe, puff, hassock", "ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin", "bottle", "cradle", "pot, flowerpot", "conveyer belt, conveyor belt, conveyer, conveyor, transporter", "train, railroad train", "stool", "lake", "tank, storage tank", "ice, water ice", "basket, handbasket", "manhole", "tent, collapsible shelter", "canopy", "microwave, microwave oven", "barrel, cask", "dirt track", "beam", "dishwasher, dish washer, dishwashing machine", "plate", "screen, crt screen", "ruins", "washer, automatic washer, washing machine", "blanket, cover", "plaything, toy", "food, solid food", "screen, silver screen, projection screen", "oven", "stage", "beacon, lighthouse, beacon light, pharos", "umbrella", "sculpture", "aqueduct", "container", "scaffolding, staging", "hood, exhaust hood", "curb, curbing, kerb", "roller coaster", "horse, equus caballus", "catwalk", "glass, drinking glass", "vase", "central reservation", "carousel", "radiator", "closet", "machine", "pier, wharf, wharfage, dock", "fan", "inflatable bounce game", "pitch", "paper", "arcade, colonnade", "hot tub", "helicopter", "tray", "partition, divider", "vineyard", "bowl", "bullring", "flag", "pot", "footbridge, overcrossing, pedestrian bridge", "shower", "bag, traveling bag, travelling bag, grip, suitcase", "bulletin board, notice board", "confessional booth", "trunk, tree trunk, bole", "forest", "elevator door", "laptop, laptop computer", "instrument panel", "bucket, pail", "tapestry, tapis", "platform", "jacket", "gate", "monitor, monitoring device", "telephone booth, phone booth, call box, telephone box, telephone kiosk", "spotlight, spot", "ring", "control panel", "blackboard, chalkboard", "air conditioner, air conditioning", "chest", "clock", "sand dune", "pipe, pipage, piping", "vault", "table football", "cannon", "swimming pool, swimming bath, natatorium", "fluorescent, fluorescent fixture", "statue", "loudspeaker, speaker, speaker unit, loudspeaker system, speaker system", "exhibitor", "ladder", "carport", "dam", "pulpit", "skylight, fanlight", "water tower", "grill, grille, grillwork", "display board", "pane, pane of glass, window glass", "rubbish, trash, scrap", "ice rink", "fruit", "patio", "vending machine", "telephone, phone, telephone set", "net", "backpack, back pack, knapsack, packsack, rucksack, haversack", "jar", "track", "magazine", "shutter", "roof", "banner, streamer", "landfill", "post", "altarpiece, reredos", "hat, chapeau, lid", "arch, archway", "table game", "bag, handbag, pocketbook, purse", "document, written document, papers", "dome", "pier", "shanties", "forecourt", "crane", "dog, domestic dog, canis familiaris", "piano, pianoforte, forte-piano", "drawing", "cabin", "ad, advertisement, advertizement, advertising, advertizing, advert", "amphitheater, amphitheatre, coliseum", "monument", "henhouse", "cockpit", "heater, warmer", "windmill, aerogenerator, wind generator", "pool", "elevator, lift", "decoration, ornament, ornamentation", "labyrinth", "text, textual matter", "printer", "mezzanine, first balcony", "mattress", "straw", "stalls", "patio, terrace", "billboard, hoarding", "bus stop", "trouser, pant", "console table, console", "rack", "notebook", "shrine", "pantry", "cart", "steam shovel", "porch", "postbox, mailbox, letter box", "figurine, statuette", "recycling bin", "folding screen", "telescope", "deck chair, beach chair", "kennel", "coffee maker", "altar, communion table, lord's table", "fish", "easel", "artificial golf green", "iceberg", "candlestick, candle holder", "shower stall, shower bath", "television stand", "wall socket, wall plug, electric outlet, electrical outlet, outlet, electric receptacle", "skeleton", "grand piano, grand", "candy, confect", "grille door", "pedestal, plinth, footstall", "jersey, t-shirt, tee shirt", "shoe", "gravestone, headstone, tombstone", "shanty", "structure", "rocking chair, rocker", "bird", "place mat", "tomb", "big top", "gas pump, gasoline pump, petrol pump, island dispenser", "lockers", "cage", "finger", "bleachers", "ferris wheel", "hairdresser chair", "mat", "stands", "aquarium, fish tank, marine museum", "streetcar, tram, tramcar, trolley, trolley car", "napkin, table napkin, serviette", "dummy", "booklet, brochure, folder, leaflet, pamphlet", "sand trap", "shop, store", "table cloth", "service station", "coffin", "drawer", "cages", "slot machine, coin machine", "balcony", "volleyball court", "table tennis", "control table", "shirt", "merchandise, ware, product", "railway", "parterre", "chimney", "can, tin, tin can", "tanks", "fabric, cloth, material, textile", "alga, algae", "system", "map", "greenhouse", "mug", "barbecue", "trailer", "toilet tissue, toilet paper, bathroom tissue", "organ", "dishrag, dishcloth", "island", "keyboard", "trench", "basket, basketball hoop, hoop", "steering wheel, wheel", "pitcher, ewer", "goal", "bread, breadstuff, staff of life", "beds", "wood", "file cabinet", "newspaper, paper", "motorboat", "rope", "guitar", "rubble", "scarf", "barrels", "cap", "leaves", "control tower", "dashboard", "bandstand", "lectern", "switch, electric switch, electrical switch", "baseboard, mopboard, skirting board", "shower room", "smoke", "faucet, spigot", "bulldozer", "saucepan", "shops", "meter", "crevasse", "gear", "candelabrum, candelabra", "sofa bed", "tunnel", "pallet", "wire, conducting wire", "kettle, boiler", "bidet", "baby buggy, baby carriage, carriage, perambulator, pram, stroller, go-cart, pushchair, pusher", "music stand", "pipe, tube", "cup", "parking meter", "ice hockey rink", "shelter", "weeds", "temple", "patty, cake", "ski slope", "panel", "wallet", "wheel", "towel rack, towel horse", "roundabout", "canister, cannister, tin", "rod", "soap dispenser", "bell", "canvas", "box office, ticket office, ticket booth", "teacup", "trellis", "workbench", "valley, vale", "toaster", "knife", "podium", "ramp", "tumble dryer", "fireplug, fire hydrant, plug", "gym shoe, sneaker, tennis shoe", "lab bench", "equipment", "rocky formation", "plastic", "calendar", "caravan", "check-in-desk", "ticket counter", "brush", "mill", "covered bridge", "bowling alley", "hanger", "excavator", "trestle", "revolving door", "blast furnace", "scale, weighing machine", "projector", "soap", "locker", "tractor", "stretcher", "frame", "grating", "alembic", "candle, taper, wax light", "barrier", "cardboard", "cave", "puddle", "tarp", "price tag", "watchtower", "meters", "light bulb, lightbulb, bulb, incandescent lamp, electric light, electric-light bulb", "tracks", "hair dryer", "skirt", "viaduct", "paper towel", "coat", "sheet", "fire extinguisher, extinguisher, asphyxiator", "water wheel", "pottery, clayware", "magazine rack", "teapot", "microphone, mike", "support", "forklift", "canyon", "cash register, register", "leaf, leafage, foliage", "remote control, remote", "soap dish", "windshield, windscreen", "cat", "cue, cue stick, pool cue, pool stick", "vent, venthole, vent-hole, blowhole", "videos", "shovel", "eaves", "antenna, aerial, transmitting aerial", "shipyard", "hen, biddy", "traffic cone", "washing machines", "truck crane", "cds", "niche", "scoreboard", "briefcase", "boot", "sweater, jumper", "hay", "pack", "bottle rack", "glacier", "pergola", "building materials", "television camera", "first floor", "rifle", "tennis table", "stadium", "safety belt", "cover", "dish rack", "synthesizer", "pumpkin", "gutter", "fruit stand", "ice floe, floe", "handle, grip, handgrip, hold", "wheelchair", "mousepad, mouse mat", "diploma", "fairground ride", "radio", "hotplate", "junk", "wheelbarrow", "stream", "toll plaza", "punching bag", "trough", "throne", "chair desk", "weighbridge", "extractor fan", "hanging clothes", "dish, dish aerial, dish antenna, saucer", "alarm clock, alarm", "ski lift", "chain", "garage", "mechanical shovel", "wine rack", "tramway", "treadmill", "menu", "block", "well", "witness stand", "branch", "duck", "casserole", "frying pan", "desk organizer", "mast", "spectacles, specs, eyeglasses, glasses", "service elevator", "dollhouse", "hammock", "clothes hanging", "photocopier", "notepad", "golf cart", "footpath", "cross", "baptismal font", "boiler", "skip", "rotisserie", "tables", "water mill", "helmet", "cover curtain", "brick", "table runner", "ashtray", "street box", "stick", "hangers", "cells", "urinal", "centerpiece", "portable fridge", "dvds", "golf club", "skirting board", "water cooler", "clipboard", "camera, photographic camera", "pigeonhole", "chips", "food processor", "post box", "lid", "drum", "blender", "cave entrance", "dental chair", "obelisk", "canoe", "mobile", "monitors", "pool ball", "cue rack", "baggage carts", "shore", "fork", "paper filer", "bicycle rack", "coat rack", "garland", "sports bag", "fish tank", "towel dispenser", "carriage", "brochure", "plaque", "stringer", "iron", "spoon", "flag pole", "toilet brush", "book stand", "water faucet, water tap, tap, hydrant", "ticket office", "broom", "dvd", "ice bucket", "carapace, shell, cuticle, shield", "tureen", "folders", "chess", "root", "sewing machine", "model", "pen", "violin", "sweatshirt", "recycling materials", "mitten", "chopping board, cutting board", "mask", "log", "mouse, computer mouse", "grill", "hole", "target", "trash bag", "chalk", "sticks", "balloon", "score", "hair spray", "roll", "runner", "engine", "inflatable glove", "games", "pallets", "baskets", "coop", "dvd player", "rocking horse", "buckets", "bread rolls", "shawl", "watering can", "spotlights", "post-it", "bowls", "security camera", "runner cloth", "lock", "alarm, warning device, alarm system", "side", "roulette", "bone", "cutlery", "pool balls", "wheels", "spice rack", "plant pots", "towel ring", "bread box", "video", "funfair", "breads", "tripod", "ironing board", "skimmer", "hollow", "scratching post", "tricycle", "file box", "mountain pass", "tombstones", "cooker", "card game, cards", "golf bag", "towel paper", "chaise lounge", "sun", "toilet paper holder", "rake", "key", "umbrella stand", "dartboard", "transformer", "fireplace utensils", "sweatshirts", "cellular telephone, cellular phone, cellphone, cell, mobile phone", "tallboy", "stapler", "sauna", "test tube", "palette", "shopping carts", "tools", "push button, push, button", "star", "roof rack", "barbed wire", "spray", "ear", "sponge", "racket", "tins", "eyeglasses", "file", "scarfs", "sugar bowl", "flip flop", "headstones", "laptop bag", "leash", "climbing frame", "suit hanger", "floor spotlight", "plate rack", "sewer", "hard drive", "sprinkler", "tools box", "necklace", "bulbs", "steel industry", "club", "jack", "door bars", "control panel, instrument panel, control board, board, panel", "hairbrush", "napkin holder", "office", "smoke detector", "utensils", "apron", "scissors", "terminal", "grinder", "entry phone", "newspaper stand", "pepper shaker", "onions", "central processing unit, cpu, c p u , central processor, processor, mainframe", "tape", "bat", "coaster", "calculator", "potatoes", "luggage rack", "salt", "street number", "viewpoint", "sword", "cd", "rowing machine", "plug", "andiron, firedog, dog, dog-iron", "pepper", "tongs", "bonfire", "dog dish", "belt", "dumbbells", "videocassette recorder, vcr", "hook", "envelopes", "shower faucet", "watch", "padlock", "swimming pool ladder", "spanners", "gravy boat", "notice board", "trash bags", "fire alarm", "ladle", "stethoscope", "rocket", "funnel", "bowling pins", "valve", "thermometer", "cups", "spice jar", "night light", "soaps", "games table", "slotted spoon", "reel", "scourer", "sleeping robe", "desk mat", "dumbbell", "hammer", "tie", "typewriter", "shaker", "cheese dish", "sea star", "racquet", "butane gas cylinder", "paper weight", "shaving brush", "sunglasses", "gear shift", "towel rail", "adding machine, totalizer, totaliser"),$/;"	v	class:ADE20K847Dataset
+classes	custom_datasets.py	/^        classes=('aeroplane', 'bag', 'bed', 'bedclothes', 'bench', 'bicycle',$/;"	v	class:PascalContext59Dataset
+classes	custom_datasets.py	/^        classes=('aeroplane', 'bicycle', 'bird', 'boat',$/;"	v	class:PascalVOC20Dataset
+classes	custom_datasets.py	/^        classes=('background', 'aeroplane', 'bag', 'bed', 'bedclothes',$/;"	v	class:PascalContext60Dataset
+classes	custom_datasets.py	/^        classes=('background', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat',$/;"	v	class:COCOObjectDataset
+clip_type	configs/base_config.py	/^    clip_type='openai',$/;"	v
+clip_type	work_dirs/20241129_081530/vis_data/config.py	/^    clip_type='openai',$/;"	v
+clip_type	work_dirs/20241129_081906/vis_data/config.py	/^    clip_type='openai',$/;"	v
+clip_type	work_dirs/cfg_city_scapes.py	/^    clip_type='openai',$/;"	v
+clsID_to_trID	datasets/cvt_coco_object.py	/^clsID_to_trID = {$/;"	v
+coco_encode_rle	segment_anything/utils/amg.py	/^def coco_encode_rle(uncompressed_rle: Dict[str, Any]) -> Dict[str, Any]:$/;"	f
+color_jitter	open_clip/transform.py	/^class color_jitter(object):$/;"	c
+commonpool_l_basic_s1b_b8k	open_clip/pretrained.py	/^    commonpool_l_basic_s1b_b8k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-CommonPool.L.basic-s1B-b8K\/'),$/;"	v
+commonpool_l_clip_s1b_b8k	open_clip/pretrained.py	/^    commonpool_l_clip_s1b_b8k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-CommonPool.L.clip-s1B-b8K\/'),$/;"	v
+commonpool_l_image_s1b_b8k	open_clip/pretrained.py	/^    commonpool_l_image_s1b_b8k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-CommonPool.L.image-s1B-b8K\/'),$/;"	v
+commonpool_l_laion_s1b_b8k	open_clip/pretrained.py	/^    commonpool_l_laion_s1b_b8k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-CommonPool.L.laion-s1B-b8K\/'),$/;"	v
+commonpool_l_s1b_b8k	open_clip/pretrained.py	/^    commonpool_l_s1b_b8k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-CommonPool.L-s1B-b8K\/'),$/;"	v
+commonpool_l_text_s1b_b8k	open_clip/pretrained.py	/^    commonpool_l_text_s1b_b8k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-CommonPool.L.text-s1B-b8K\/'),$/;"	v
+commonpool_m_basic_s128m_b4k	open_clip/pretrained.py	/^    commonpool_m_basic_s128m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.M.basic-s128M-b4K\/'),$/;"	v
+commonpool_m_clip_s128m_b4k	open_clip/pretrained.py	/^    commonpool_m_clip_s128m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.M.clip-s128M-b4K\/'),$/;"	v
+commonpool_m_image_s128m_b4k	open_clip/pretrained.py	/^    commonpool_m_image_s128m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.M.image-s128M-b4K\/'),$/;"	v
+commonpool_m_laion_s128m_b4k	open_clip/pretrained.py	/^    commonpool_m_laion_s128m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.M.laion-s128M-b4K\/'),$/;"	v
+commonpool_m_s128m_b4k	open_clip/pretrained.py	/^    commonpool_m_s128m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.M-s128M-b4K\/'),$/;"	v
+commonpool_m_text_s128m_b4k	open_clip/pretrained.py	/^    commonpool_m_text_s128m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.M.text-s128M-b4K\/'),$/;"	v
+commonpool_s_basic_s13m_b4k	open_clip/pretrained.py	/^    commonpool_s_basic_s13m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.S.basic-s13M-b4K\/'),$/;"	v
+commonpool_s_clip_s13m_b4k	open_clip/pretrained.py	/^    commonpool_s_clip_s13m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.S.clip-s13M-b4K\/'),$/;"	v
+commonpool_s_image_s13m_b4k	open_clip/pretrained.py	/^    commonpool_s_image_s13m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.S.image-s13M-b4K\/'),$/;"	v
+commonpool_s_laion_s13m_b4k	open_clip/pretrained.py	/^    commonpool_s_laion_s13m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.S.laion-s13M-b4K\/'),$/;"	v
+commonpool_s_s13m_b4k	open_clip/pretrained.py	/^    commonpool_s_s13m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.S-s13M-b4K\/'),$/;"	v
+commonpool_s_text_s13m_b4k	open_clip/pretrained.py	/^    commonpool_s_text_s13m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-CommonPool.S.text-s13M-b4K\/'),$/;"	v
+commonpool_xl_clip_s13b_b90k	open_clip/pretrained.py	/^    commonpool_xl_clip_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-L-14-CommonPool.XL.clip-s13B-b90K\/'),$/;"	v
+commonpool_xl_laion_s13b_b90k	open_clip/pretrained.py	/^    commonpool_xl_laion_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-L-14-CommonPool.XL.laion-s13B-b90K\/'),$/;"	v
+commonpool_xl_s13b_b90k	open_clip/pretrained.py	/^    commonpool_xl_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-L-14-CommonPool.XL-s13B-b90K\/'),$/;"	v
+compute_padsize	proxyclip_segmentor.py	/^    def compute_padsize(self, H: int, W: int, patch_size: int):$/;"	m	class:ProxyCLIPSegmentation
+configs_list	eval_all.py	/^configs_list = [$/;"	v
+context_length	open_clip/model.py	/^        context_length=context_length,$/;"	v
+context_length	open_clip/model.py	/^    context_length = state_dict["positional_embedding"].shape[0]$/;"	v
+convert_int8_model_to_inference_mode	open_clip/utils.py	/^def convert_int8_model_to_inference_mode(model):$/;"	f
+convert_to_custom_text_state_dict	open_clip/model.py	/^def convert_to_custom_text_state_dict(state_dict: dict):$/;"	f
+convert_to_trainID	datasets/cvt_coco_object.py	/^def convert_to_trainID(maskpath, out_mask_dir, is_train):$/;"	f
+convert_weights_to_fp16	open_clip/model.py	/^convert_weights_to_fp16 = convert_weights_to_lp  # backwards compat$/;"	v
+convert_weights_to_lp	open_clip/model.py	/^def convert_weights_to_lp(model: nn.Module, dtype=torch.float16):$/;"	f
+create_loss	open_clip/factory.py	/^def create_loss(args):$/;"	f
+create_model	open_clip/factory.py	/^def create_model($/;"	f
+create_model_and_transforms	open_clip/factory.py	/^def create_model_and_transforms($/;"	f
+create_model_from_pretrained	open_clip/factory.py	/^def create_model_from_pretrained($/;"	f
+crop_len	segment_anything/utils/amg.py	/^    def crop_len(orig_len, n_crops, overlap):$/;"	f	function:generate_crop_boxes
+cudnn_benchmark	configs/base_config.py	/^    cudnn_benchmark=True,$/;"	v
+cudnn_benchmark	work_dirs/20241129_081530/vis_data/config.py	/^    cudnn_benchmark=True,$/;"	v
+cudnn_benchmark	work_dirs/20241129_081906/vis_data/config.py	/^    cudnn_benchmark=True,$/;"	v
+cudnn_benchmark	work_dirs/cfg_city_scapes.py	/^    cudnn_benchmark=True,$/;"	v
+custom_attn	open_clip/transformer.py	/^    def custom_attn(self, attn_layer, x, ex_feats=None, beta=1.2, gamma=3.0, token_size=(16, 16)):$/;"	m	class:VisionTransformer
+data_prefix	configs/cfg_ade20k.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_ade847.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_city_scapes.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_coco_object.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_coco_stuff164k.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_context459.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_context59.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_context60.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_voc20.py	/^        data_prefix=dict($/;"	v
+data_prefix	configs/cfg_voc21.py	/^        data_prefix=dict($/;"	v
+data_prefix	work_dirs/20241129_081530/vis_data/config.py	/^        data_prefix=dict($/;"	v
+data_prefix	work_dirs/20241129_081906/vis_data/config.py	/^        data_prefix=dict($/;"	v
+data_prefix	work_dirs/cfg_city_scapes.py	/^        data_prefix=dict($/;"	v
+data_root	configs/cfg_ade20k.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_ade20k.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_ade847.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_ade847.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_city_scapes.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_city_scapes.py	/^data_root = '\/workspace\/hdd0\/byeongcheol\/Data\/cityscapes'$/;"	v
+data_root	configs/cfg_coco_object.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_coco_object.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_coco_stuff164k.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_coco_stuff164k.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_context459.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_context459.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_context59.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_context59.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_context60.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_context60.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_voc20.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_voc20.py	/^data_root = ''$/;"	v
+data_root	configs/cfg_voc21.py	/^        data_root=data_root,$/;"	v
+data_root	configs/cfg_voc21.py	/^data_root = ''$/;"	v
+data_root	work_dirs/20241129_081530/vis_data/config.py	/^        data_root='',$/;"	v
+data_root	work_dirs/20241129_081530/vis_data/config.py	/^data_root = ''$/;"	v
+data_root	work_dirs/20241129_081906/vis_data/config.py	/^        data_root='\/workspace\/hdd0\/byeongcheol\/Data\/cityscapes',$/;"	v
+data_root	work_dirs/20241129_081906/vis_data/config.py	/^data_root = '\/workspace\/hdd0\/byeongcheol\/Data\/cityscapes'$/;"	v
+data_root	work_dirs/cfg_city_scapes.py	/^        data_root='\/workspace\/hdd0\/byeongcheol\/Data\/cityscapes',$/;"	v
+data_root	work_dirs/cfg_city_scapes.py	/^data_root = '\/workspace\/hdd0\/byeongcheol\/Data\/cityscapes'$/;"	v
+datacomp1b	open_clip/pretrained.py	/^        datacomp1b=_apcfg(hf_hub='UCSC-VLAA\/ViT-H-14-CLIPA-336-datacomp1B\/'),$/;"	v
+datacomp1b	open_clip/pretrained.py	/^        datacomp1b=_apcfg(hf_hub='UCSC-VLAA\/ViT-H-14-CLIPA-datacomp1B\/'),$/;"	v
+datacomp1b	open_clip/pretrained.py	/^        datacomp1b=_apcfg(hf_hub='UCSC-VLAA\/ViT-L-14-CLIPA-336-datacomp1B\/'),$/;"	v
+datacomp1b	open_clip/pretrained.py	/^        datacomp1b=_apcfg(hf_hub='UCSC-VLAA\/ViT-L-14-CLIPA-datacomp1B\/'),$/;"	v
+datacomp1b	open_clip/pretrained.py	/^        datacomp1b=_apcfg(hf_hub='UCSC-VLAA\/ViT-bigG-14-CLIPA-336-datacomp1B\/'),$/;"	v
+datacomp1b	open_clip/pretrained.py	/^        datacomp1b=_apcfg(hf_hub='UCSC-VLAA\/ViT-bigG-14-CLIPA-datacomp1B\/'),$/;"	v
+datacomp_l_s1b_b8k	open_clip/pretrained.py	/^    datacomp_l_s1b_b8k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-DataComp.L-s1B-b8K\/'),$/;"	v
+datacomp_m_s128m_b4k	open_clip/pretrained.py	/^    datacomp_m_s128m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-DataComp.M-s128M-b4K\/'),$/;"	v
+datacomp_s34b_b86k	open_clip/pretrained.py	/^    datacomp_s34b_b86k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-256x256-DataComp-s34B-b86K\/'),$/;"	v
+datacomp_s_s13m_b4k	open_clip/pretrained.py	/^    datacomp_s_s13m_b4k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-DataComp.S-s13M-b4K\/'),$/;"	v
+datacomp_xl_s13b_b90k	open_clip/pretrained.py	/^    datacomp_xl_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-DataComp.XL-s13B-b90K\/'),$/;"	v
+datacomp_xl_s13b_b90k	open_clip/pretrained.py	/^    datacomp_xl_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-DataComp.XL-s13B-b90K\/'),$/;"	v
+datacomp_xl_s13b_b90k	open_clip/pretrained.py	/^    datacomp_xl_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-L-14-DataComp.XL-s13B-b90K\/'),$/;"	v
+dataset	configs/cfg_ade20k.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_ade847.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_city_scapes.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_coco_object.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_coco_stuff164k.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_context459.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_context59.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_context60.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_voc20.py	/^    dataset=dict($/;"	v
+dataset	configs/cfg_voc21.py	/^    dataset=dict($/;"	v
+dataset	work_dirs/20241129_081530/vis_data/config.py	/^    dataset=dict($/;"	v
+dataset	work_dirs/20241129_081906/vis_data/config.py	/^    dataset=dict($/;"	v
+dataset	work_dirs/cfg_city_scapes.py	/^    dataset=dict($/;"	v
+dataset_type	configs/cfg_ade20k.py	/^dataset_type = 'ADE20KDataset'$/;"	v
+dataset_type	configs/cfg_ade847.py	/^dataset_type = 'ADE20K847Dataset'$/;"	v
+dataset_type	configs/cfg_city_scapes.py	/^dataset_type = 'CityscapesDataset'$/;"	v
+dataset_type	configs/cfg_coco_object.py	/^dataset_type = 'COCOObjectDataset'$/;"	v
+dataset_type	configs/cfg_coco_stuff164k.py	/^dataset_type = 'COCOStuffDataset'$/;"	v
+dataset_type	configs/cfg_context459.py	/^dataset_type = 'PascalContext459Dataset'$/;"	v
+dataset_type	configs/cfg_context59.py	/^dataset_type = 'PascalContext59Dataset'$/;"	v
+dataset_type	configs/cfg_context60.py	/^dataset_type = 'PascalContext60Dataset'$/;"	v
+dataset_type	configs/cfg_voc20.py	/^dataset_type = 'PascalVOC20Dataset'$/;"	v
+dataset_type	configs/cfg_voc21.py	/^dataset_type = 'PascalVOCDataset'$/;"	v
+dataset_type	work_dirs/20241129_081530/vis_data/config.py	/^dataset_type = 'CityscapesDataset'$/;"	v
+dataset_type	work_dirs/20241129_081906/vis_data/config.py	/^dataset_type = 'CityscapesDataset'$/;"	v
+dataset_type	work_dirs/cfg_city_scapes.py	/^dataset_type = 'CityscapesDataset'$/;"	v
+decode	open_clip/tokenizer.py	/^    def decode(self, tokens):$/;"	m	class:SimpleTokenizer
+decode	open_clip/tokenizer.py	/^def decode(output_ids: torch.Tensor):$/;"	f
+default	open_clip/push_to_hf_hub.py	/^        default=False,$/;"	v
+default_bpe	open_clip/tokenizer.py	/^def default_bpe():$/;"	f
+default_hooks	configs/base_config.py	/^default_hooks = dict($/;"	v
+default_hooks	work_dirs/20241129_081530/vis_data/config.py	/^default_hooks = dict($/;"	v
+default_hooks	work_dirs/20241129_081906/vis_data/config.py	/^default_hooks = dict($/;"	v
+default_hooks	work_dirs/cfg_city_scapes.py	/^default_hooks = dict($/;"	v
+default_scope	configs/base_config.py	/^default_scope = 'mmseg'$/;"	v
+default_scope	work_dirs/20241129_081530/vis_data/config.py	/^default_scope = 'mmseg'$/;"	v
+default_scope	work_dirs/20241129_081906/vis_data/config.py	/^default_scope = 'mmseg'$/;"	v
+default_scope	work_dirs/cfg_city_scapes.py	/^default_scope = 'mmseg'$/;"	v
+depth	segment_anything/build_sam.py	/^                depth=2,$/;"	v
+depth	segment_anything/build_sam.py	/^            depth=encoder_depth,$/;"	v
+device	segment_anything/modeling/sam.py	/^    def device(self) -> Any:$/;"	m	class:Sam
+device	segment_anything/predictor.py	/^    def device(self) -> torch.device:$/;"	m	class:SamPredictor
+dfn2b	open_clip/pretrained.py	/^    dfn2b=_pcfg(hf_hub='apple\/DFN2B-CLIP-ViT-B-16\/')$/;"	v
+dfn2b	open_clip/pretrained.py	/^    dfn2b=_pcfg(hf_hub='apple\/DFN2B-CLIP-ViT-L-14\/'),$/;"	v
+dfn5b	open_clip/pretrained.py	/^    dfn5b=_pcfg($/;"	v
+dist_cfg	configs/base_config.py	/^    dist_cfg=dict(backend='nccl'),$/;"	v
+dist_cfg	work_dirs/20241129_081530/vis_data/config.py	/^    dist_cfg=dict(backend='nccl'),$/;"	v
+dist_cfg	work_dirs/20241129_081906/vis_data/config.py	/^    dist_cfg=dict(backend='nccl'),$/;"	v
+dist_cfg	work_dirs/cfg_city_scapes.py	/^    dist_cfg=dict(backend='nccl'),$/;"	v
+dist_loss	open_clip/loss.py	/^    def dist_loss(self, teacher_logits, student_logits):$/;"	m	class:DistillClipLoss
+download_pretrained	open_clip/pretrained.py	/^def download_pretrained($/;"	f
+download_pretrained_from_hf	open_clip/pretrained.py	/^def download_pretrained_from_hf($/;"	f
+download_pretrained_from_url	open_clip/pretrained.py	/^def download_pretrained_from_url($/;"	f
+embed_dim	open_clip/model.py	/^    embed_dim = state_dict["text_projection"].shape[1]$/;"	v
+embed_dim	segment_anything/build_sam.py	/^            embed_dim=encoder_embed_dim,$/;"	v
+embed_dim	segment_anything/build_sam.py	/^            embed_dim=prompt_embed_dim,$/;"	v
+embedding_dim	segment_anything/build_sam.py	/^                embedding_dim=prompt_embed_dim,$/;"	v
+encode	open_clip/tokenizer.py	/^    def encode(self, text):$/;"	m	class:SimpleTokenizer
+encode_decode	proxyclip_segmentor.py	/^    def encode_decode(self, inputs, batch_img_metas):$/;"	m	class:ProxyCLIPSegmentation
+encode_image	open_clip/coca_model.py	/^    def encode_image(self, images, normalize: bool = True):$/;"	m	class:CoCa
+encode_image	open_clip/model.py	/^    def encode_image(self, image, external_feats, beta, gamma, normalize: bool = False):$/;"	m	class:CLIP
+encode_image	open_clip/model.py	/^    def encode_image(self, image, normalize: bool = False):$/;"	m	class:CustomTextCLIP
+encode_text	open_clip/coca_model.py	/^    def encode_text(self, text, normalize: bool = True):$/;"	m	class:CoCa
+encode_text	open_clip/model.py	/^    def encode_text(self, text, normalize: bool = False):$/;"	m	class:CLIP
+encode_text	open_clip/model.py	/^    def encode_text(self, text, normalize: bool = False):$/;"	m	class:CustomTextCLIP
+env_cfg	configs/base_config.py	/^env_cfg = dict($/;"	v
+env_cfg	work_dirs/20241129_081530/vis_data/config.py	/^env_cfg = dict($/;"	v
+env_cfg	work_dirs/20241129_081906/vis_data/config.py	/^env_cfg = dict($/;"	v
+env_cfg	work_dirs/cfg_city_scapes.py	/^env_cfg = dict($/;"	v
+expansion	open_clip/modified_resnet.py	/^    expansion = 4$/;"	v	class:Bottleneck
+extract_feat	proxyclip_segmentor.py	/^    def extract_feat(self, inputs):$/;"	m	class:ProxyCLIPSegmentation
+filter	segment_anything/utils/amg.py	/^    def filter(self, keep: torch.Tensor) -> None:$/;"	m	class:MaskData
+forward	open_clip/coca_model.py	/^    def forward($/;"	m	class:CoCa
+forward	open_clip/hf_model.py	/^    def forward(self, x: BaseModelOutput, attention_mask: TensorType):$/;"	m	class:ClsLastHiddenStatePooler
+forward	open_clip/hf_model.py	/^    def forward(self, x: BaseModelOutput, attention_mask: TensorType):$/;"	m	class:ClsPooler
+forward	open_clip/hf_model.py	/^    def forward(self, x: BaseModelOutput, attention_mask: TensorType):$/;"	m	class:MaxPooler
+forward	open_clip/hf_model.py	/^    def forward(self, x: BaseModelOutput, attention_mask: TensorType):$/;"	m	class:MeanPooler
+forward	open_clip/hf_model.py	/^    def forward(self, x: TensorType):$/;"	m	class:HFTextEncoder
+forward	open_clip/loss.py	/^    def forward($/;"	m	class:DistillClipLoss
+forward	open_clip/loss.py	/^    def forward(ctx, from_rank, to_rank, group, tensor):$/;"	m	class:NeighbourExchange
+forward	open_clip/loss.py	/^    def forward(ctx, left_rank, right_rank, group, tensor_to_left, tensor_to_right):$/;"	m	class:NeighbourExchangeBidir
+forward	open_clip/loss.py	/^    def forward(self, image_features, text_features, logit_scale, logit_bias, output_dict=False):$/;"	m	class:SigLipLoss
+forward	open_clip/loss.py	/^    def forward(self, image_features, text_features, logit_scale, output_dict=False):$/;"	m	class:ClipLoss
+forward	open_clip/loss.py	/^    def forward(self, image_features, text_features, logits, labels, logit_scale, output_dict=False):$/;"	m	class:CoCaLoss
+forward	open_clip/model.py	/^    def forward($/;"	m	class:CLIP
+forward	open_clip/model.py	/^    def forward($/;"	m	class:CustomTextCLIP
+forward	open_clip/modified_resnet.py	/^    def forward(self, x):$/;"	m	class:AttentionPool2d
+forward	open_clip/modified_resnet.py	/^    def forward(self, x):$/;"	m	class:ModifiedResNet
+forward	open_clip/modified_resnet.py	/^    def forward(self, x: torch.Tensor):$/;"	m	class:Bottleneck
+forward	open_clip/timm_model.py	/^    def forward(self, x):$/;"	m	class:TimmModel
+forward	open_clip/transform.py	/^    def forward(self, img):$/;"	m	class:CenterCropOrPad
+forward	open_clip/transformer.py	/^    def forward($/;"	m	class:ResidualAttentionBlock
+forward	open_clip/transformer.py	/^    def forward(self, image_embs, text_embs):$/;"	m	class:MultimodalTransformer
+forward	open_clip/transformer.py	/^    def forward(self, text):$/;"	m	class:TextTransformer
+forward	open_clip/transformer.py	/^    def forward(self, x):$/;"	m	class:LayerScale
+forward	open_clip/transformer.py	/^    def forward(self, x):$/;"	m	class:PatchDropout
+forward	open_clip/transformer.py	/^    def forward(self, x, attn_mask: Optional[torch.Tensor] = None):$/;"	m	class:Attention
+forward	open_clip/transformer.py	/^    def forward(self, x: torch.Tensor):$/;"	m	class:AttentionalPooler
+forward	open_clip/transformer.py	/^    def forward(self, x: torch.Tensor):$/;"	m	class:LayerNorm
+forward	open_clip/transformer.py	/^    def forward(self, x: torch.Tensor):$/;"	m	class:LayerNormFp32
+forward	open_clip/transformer.py	/^    def forward(self, x: torch.Tensor):$/;"	m	class:QuickGELU
+forward	open_clip/transformer.py	/^    def forward(self, x: torch.Tensor, attn_mask: Optional[torch.Tensor] = None):$/;"	m	class:CustomResidualAttentionBlock
+forward	open_clip/transformer.py	/^    def forward(self, x: torch.Tensor, attn_mask: Optional[torch.Tensor] = None):$/;"	m	class:Transformer
+forward	open_clip/transformer.py	/^    def forward(self, x: torch.Tensor, ex_feats: Optional[torch.Tensor] = None, beta=1.2, gamma=3.0):$/;"	m	class:VisionTransformer
+forward	segment_anything/modeling/common.py	/^    def forward(self, x: torch.Tensor) -> torch.Tensor:$/;"	m	class:LayerNorm2d
+forward	segment_anything/modeling/common.py	/^    def forward(self, x: torch.Tensor) -> torch.Tensor:$/;"	m	class:MLPBlock
+forward	segment_anything/modeling/image_encoder.py	/^    def forward(self, x: torch.Tensor) -> torch.Tensor:$/;"	m	class:Attention
+forward	segment_anything/modeling/image_encoder.py	/^    def forward(self, x: torch.Tensor) -> torch.Tensor:$/;"	m	class:Block
+forward	segment_anything/modeling/image_encoder.py	/^    def forward(self, x: torch.Tensor) -> torch.Tensor:$/;"	m	class:ImageEncoderViT
+forward	segment_anything/modeling/image_encoder.py	/^    def forward(self, x: torch.Tensor) -> torch.Tensor:$/;"	m	class:PatchEmbed
+forward	segment_anything/modeling/mask_decoder.py	/^    def forward($/;"	m	class:MaskDecoder
+forward	segment_anything/modeling/mask_decoder.py	/^    def forward(self, x):$/;"	m	class:MLP
+forward	segment_anything/modeling/prompt_encoder.py	/^    def forward($/;"	m	class:PromptEncoder
+forward	segment_anything/modeling/prompt_encoder.py	/^    def forward(self, size: Tuple[int, int]) -> torch.Tensor:$/;"	m	class:PositionEmbeddingRandom
+forward	segment_anything/modeling/sam.py	/^    def forward($/;"	m	class:Sam
+forward	segment_anything/modeling/transformer.py	/^    def forward($/;"	m	class:TwoWayAttentionBlock
+forward	segment_anything/modeling/transformer.py	/^    def forward($/;"	m	class:TwoWayTransformer
+forward	segment_anything/modeling/transformer.py	/^    def forward(self, q: Tensor, k: Tensor, v: Tensor) -> Tensor:$/;"	m	class:Attention
+forward	segment_anything/utils/onnx.py	/^    def forward($/;"	m	class:SamOnnxModel
+forward_feature	proxyclip_segmentor.py	/^    def forward_feature(self, img, logit_size=None):$/;"	m	class:ProxyCLIPSegmentation
+forward_features	mae/models_vit.py	/^    def forward_features(self, x):$/;"	m	class:VisionTransformer
+forward_slide	proxyclip_segmentor.py	/^    def forward_slide(self, img, img_metas, stride=112, crop_size=224):$/;"	m	class:ProxyCLIPSegmentation
+forward_with_coords	segment_anything/modeling/prompt_encoder.py	/^    def forward_with_coords($/;"	m	class:PositionEmbeddingRandom
+freeze_batch_norm_2d	open_clip/utils.py	/^def freeze_batch_norm_2d(module, module_match={}, name=''):$/;"	f
+frozen_laion5b_s13b_b90k	open_clip/pretrained.py	/^    frozen_laion5b_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-H-14-frozen-xlm-roberta-large-laion5B-s13B-b90k\/'),$/;"	v
+gather_features	open_clip/loss.py	/^def gather_features($/;"	f
+gathered_image_features	open_clip/loss.py	/^                gathered_image_features = list(all_image_features.chunk(world_size, dim=0))$/;"	v
+gathered_image_features	open_clip/loss.py	/^            gathered_image_features = [torch.zeros_like(image_features) for _ in range(world_size)]$/;"	v
+gathered_text_features	open_clip/loss.py	/^                gathered_text_features = list(all_text_features.chunk(world_size, dim=0))$/;"	v
+gathered_text_features	open_clip/loss.py	/^            gathered_text_features = [torch.zeros_like(text_features) for _ in range(world_size)]$/;"	v
+generate	open_clip/coca_model.py	/^    def generate($/;"	m	class:CoCa
+generate	segment_anything/automatic_mask_generator.py	/^    def generate(self, image: np.ndarray) -> List[Dict[str, Any]]:$/;"	m	class:SamAutomaticMaskGenerator
+generate_crop_boxes	segment_anything/utils/amg.py	/^def generate_crop_boxes($/;"	f
+generate_readme	open_clip/push_to_hf_hub.py	/^def generate_readme(model_card: dict, model_name: str):$/;"	f
+get_1d_sincos_pos_embed_from_grid	mae/pos_embed.py	/^def get_1d_sincos_pos_embed_from_grid(embed_dim, pos):$/;"	f
+get_1d_sincos_pos_embed_from_grid	open_clip/pos_embed.py	/^def get_1d_sincos_pos_embed_from_grid(embed_dim, pos):$/;"	f
+get_2d_sincos_pos_embed	mae/pos_embed.py	/^def get_2d_sincos_pos_embed(embed_dim, grid_size, cls_token=False):$/;"	f
+get_2d_sincos_pos_embed	open_clip/pos_embed.py	/^def get_2d_sincos_pos_embed(embed_dim, grid_size, cls_token=False):$/;"	f
+get_2d_sincos_pos_embed_from_grid	mae/pos_embed.py	/^def get_2d_sincos_pos_embed_from_grid(embed_dim, grid):$/;"	f
+get_2d_sincos_pos_embed_from_grid	open_clip/pos_embed.py	/^def get_2d_sincos_pos_embed_from_grid(embed_dim, grid):$/;"	f
+get_cast_dtype	open_clip/model.py	/^def get_cast_dtype(precision: str):$/;"	f
+get_cast_dtype	open_clip/transformer.py	/^    def get_cast_dtype(self) -> torch.dtype:$/;"	m	class:Transformer
+get_clean_fn	open_clip/tokenizer.py	/^def get_clean_fn(type: str):$/;"	f
+get_cls_idx	proxyclip_segmentor.py	/^def get_cls_idx(path):$/;"	f
+get_dense_pe	segment_anything/modeling/prompt_encoder.py	/^    def get_dense_pe(self) -> torch.Tensor:$/;"	m	class:PromptEncoder
+get_ground_truth	open_clip/loss.py	/^    def get_ground_truth(self, device, dtype, num_logits, negative_only=False) -> torch.Tensor:$/;"	m	class:SigLipLoss
+get_ground_truth	open_clip/loss.py	/^    def get_ground_truth(self, device, num_logits) -> torch.Tensor:$/;"	m	class:ClipLoss
+get_image_embedding	segment_anything/predictor.py	/^    def get_image_embedding(self) -> torch.Tensor:$/;"	m	class:SamPredictor
+get_input_dtype	open_clip/model.py	/^def get_input_dtype(precision: str):$/;"	f
+get_logits	open_clip/loss.py	/^    def get_logits(self, image_features, text_features, logit_scale):$/;"	m	class:ClipLoss
+get_logits	open_clip/loss.py	/^    def get_logits(self, image_features, text_features, logit_scale, logit_bias=None):$/;"	m	class:SigLipLoss
+get_logits	open_clip/model.py	/^    def get_logits(self, image, text):$/;"	m	class:CLIP
+get_logits	open_clip/model.py	/^    def get_logits(self, image, text):$/;"	m	class:CustomTextCLIP
+get_model_config	open_clip/factory.py	/^def get_model_config(model_name):$/;"	f
+get_model_preprocess_cfg	open_clip/model.py	/^def get_model_preprocess_cfg(model):$/;"	f
+get_model_tokenize_cfg	open_clip/model.py	/^def get_model_tokenize_cfg(model):$/;"	f
+get_order	open_clip/tokenizer.py	/^    def get_order(x):$/;"	f	function:syntax_mask_tokenize
+get_pairs	open_clip/tokenizer.py	/^def get_pairs(word):$/;"	f
+get_params	open_clip/transform.py	/^    def get_params($/;"	m	class:ResizeKeepRatio
+get_preprocess_shape	segment_anything/utils/transforms.py	/^    def get_preprocess_shape(oldh: int, oldw: int, long_side_length: int) -> Tuple[int, int]:$/;"	m	class:ResizeLongestSide
+get_pretrained_cfg	open_clip/pretrained.py	/^def get_pretrained_cfg(model: str, tag: str):$/;"	f
+get_pretrained_url	open_clip/pretrained.py	/^def get_pretrained_url(model: str, tag: str):$/;"	f
+get_reduction_mask_fn	open_clip/tokenizer.py	/^def get_reduction_mask_fn(type: str):$/;"	f
+get_rel_pos	segment_anything/modeling/image_encoder.py	/^def get_rel_pos(q_size: int, k_size: int, rel_pos: torch.Tensor) -> torch.Tensor:$/;"	f
+get_tokenizer	open_clip/factory.py	/^def get_tokenizer($/;"	f
+global_attn_indexes	segment_anything/build_sam.py	/^            global_attn_indexes=encoder_global_attn_indexes,$/;"	v
+gray_scale	open_clip/transform.py	/^class gray_scale(object):$/;"	c
+grid_size	open_clip/model.py	/^        grid_size = round((state_dict["visual.positional_embedding"].shape[0] - 1) ** 0.5)$/;"	v
+has_distributed	open_clip/loss.py	/^    has_distributed = False$/;"	v
+has_distributed	open_clip/loss.py	/^    has_distributed = True$/;"	v
+has_hf_hub	open_clip/pretrained.py	/^def has_hf_hub(necessary=False):$/;"	f
+heads	open_clip/model.py	/^        heads=transformer_heads,$/;"	v
+help	open_clip/push_to_hf_hub.py	/^        help="Destination HF Hub repo-id ie 'organization\/model_id'.",$/;"	v
+help	open_clip/push_to_hf_hub.py	/^        help="Use a pretrained CLIP model weights with the specified tag or file path.",$/;"	v
+help	open_clip/push_to_hf_hub.py	/^        help="image resize interpolation"$/;"	v
+help	open_clip/push_to_hf_hub.py	/^        help="image resize mode during inference"$/;"	v
+help	open_clip/push_to_hf_hub.py	/^        help="make hf_tokenizer_name point in uploaded config point to itself"$/;"	v
+help	open_clip/push_to_hf_hub.py	/^        help='Override default image mean value of dataset')$/;"	v
+help	open_clip/push_to_hf_hub.py	/^        help='Override default image std deviation of of dataset')$/;"	v
+hf_hub	open_clip/pretrained.py	/^        hf_hub='apple\/DFN5B-CLIP-ViT-H-14-378\/',$/;"	v
+hf_hub	open_clip/pretrained.py	/^        hf_hub='apple\/DFN5B-CLIP-ViT-H-14\/',$/;"	v
+hf_hub	open_clip/pretrained.py	/^        hf_hub='laion\/CLIP-ViT-L-14-laion2B-s32B-b82K\/',$/;"	v
+hf_hub_download	open_clip/pretrained.py	/^    hf_hub_download = None$/;"	v
+hf_hub_download	open_clip/pretrained.py	/^    hf_hub_download = partial(hf_hub_download, library_name="open_clip", library_version=__version__)$/;"	v
+hook_fn_forward_qkv	proxyclip_segmentor.py	/^            def hook_fn_forward_qkv(module, input, output):$/;"	f	function:ProxyCLIPSegmentation.forward_feature
+hvd	open_clip/loss.py	/^    hvd = None$/;"	v
+image_embedding_size	segment_anything/build_sam.py	/^            image_embedding_size=(image_embedding_size, image_embedding_size),$/;"	v
+image_embedding_size	segment_anything/build_sam.py	/^    image_embedding_size = image_size \/\/ vit_patch_size$/;"	v
+image_encoder	segment_anything/build_sam.py	/^        image_encoder=ImageEncoderViT($/;"	v
+image_interpolation	open_clip/push_to_hf_hub.py	/^        image_interpolation=args.image_interpolation,$/;"	v
+image_mean	open_clip/push_to_hf_hub.py	/^        image_mean=args.image_mean,  # override image mean\/std if trained w\/ non defaults$/;"	v
+image_resize_mode	open_clip/push_to_hf_hub.py	/^        image_resize_mode=args.image_resize_mode,$/;"	v
+image_size	open_clip/model.py	/^        image_size = output_width * 32$/;"	v
+image_size	open_clip/model.py	/^        image_size = vision_patch_size * grid_size$/;"	v
+image_size	open_clip/model.py	/^        image_size=image_size,$/;"	v
+image_size	segment_anything/build_sam.py	/^    image_size = 1024$/;"	v
+image_std	open_clip/push_to_hf_hub.py	/^        image_std=args.image_std,$/;"	v
+image_transform	open_clip/transform.py	/^def image_transform($/;"	f
+image_transform_v2	open_clip/transform.py	/^def image_transform_v2($/;"	f
+imagenet_classnames	prompts/imagenet_template.py	/^imagenet_classnames = ["tench", "goldfish", "great white shark", "tiger shark", "hammerhead shark", "electric ray",$/;"	v
+img	demo.py	/^img = Image.open('images\/horses.jpg')$/;"	v
+img_path	configs/cfg_ade20k.py	/^            img_path='images\/validation',$/;"	v
+img_path	configs/cfg_ade847.py	/^            img_path='images_detectron2\/validation',$/;"	v
+img_size	segment_anything/build_sam.py	/^            img_size=image_size,$/;"	v
+img_tensor	demo.py	/^img_tensor = img_tensor.unsqueeze(0).to('cuda')$/;"	v
+img_tensor	demo.py	/^img_tensor = transforms.Compose([$/;"	v
+inference	proxyclip_segmentor.py	/^    def inference(self, img, batch_img_metas):$/;"	m	class:ProxyCLIPSegmentation
+init_parameters	open_clip/hf_model.py	/^    def init_parameters(self):$/;"	m	class:HFTextEncoder
+init_parameters	open_clip/modified_resnet.py	/^    def init_parameters(self):$/;"	m	class:ModifiedResNet
+init_parameters	open_clip/transformer.py	/^    def init_parameters(self):$/;"	m	class:MultimodalTransformer
+init_parameters	open_clip/transformer.py	/^    def init_parameters(self):$/;"	m	class:TextTransformer
+init_parameters	open_clip/transformer.py	/^    def init_parameters(self):$/;"	m	class:VisionTransformer
+input_image_size	segment_anything/build_sam.py	/^            input_image_size=(image_size, image_size),$/;"	v
+input_size	open_clip/transform.py	/^    def input_size(self):$/;"	m	class:PreprocessCfg
+interpolate_pos_embed	mae/pos_embed.py	/^def interpolate_pos_embed(model, checkpoint_model):$/;"	f
+interpolate_pos_embed	open_clip/pos_embed.py	/^def interpolate_pos_embed(model, checkpoint_model):$/;"	f
+interpolate_pos_encoding	open_clip/transformer.py	/^    def interpolate_pos_encoding(self, x, w, h):$/;"	m	class:VisionTransformer
+interpolation	open_clip/pretrained.py	/^        interpolation="bicubic",$/;"	v
+iou_head_depth	segment_anything/build_sam.py	/^            iou_head_depth=3,$/;"	v
+iou_head_hidden_dim	segment_anything/build_sam.py	/^            iou_head_hidden_dim=256,$/;"	v
+iou_metrics	work_dirs/20241129_081530/vis_data/config.py	/^    iou_metrics=[$/;"	v
+iou_metrics	work_dirs/20241129_081906/vis_data/config.py	/^    iou_metrics=[$/;"	v
+iou_metrics	work_dirs/cfg_city_scapes.py	/^    iou_metrics=[$/;"	v
+is_box_near_crop_edge	segment_anything/utils/amg.py	/^def is_box_near_crop_edge($/;"	f
+is_pretrained_cfg	open_clip/pretrained.py	/^def is_pretrained_cfg(model: str, tag: str):$/;"	f
+items	segment_anything/utils/amg.py	/^    def items(self) -> ItemsView[str, Any]:$/;"	m	class:MaskData
+laion2b	open_clip/pretrained.py	/^        laion2b=_apcfg(hf_hub='UCSC-VLAA\/ViT-H-14-CLIPA-336-laion2B\/'),$/;"	v
+laion2b_e16	open_clip/pretrained.py	/^    laion2b_e16=_pcfg($/;"	v
+laion2b_s12b_b32k	open_clip/pretrained.py	/^    laion2b_s12b_b32k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-roberta-base-laion2B-s12B-b32k\/'),$/;"	v
+laion2b_s12b_b42k	open_clip/pretrained.py	/^    laion2b_s12b_b42k=_pcfg(hf_hub='laion\/CLIP-ViT-g-14-laion2B-s12B-b42K\/'),$/;"	v
+laion2b_s13b_b82k	open_clip/pretrained.py	/^    laion2b_s13b_b82k=_pcfg(hf_hub='laion\/CLIP-convnext_base_w-laion2B-s13B-b82K\/'),$/;"	v
+laion2b_s13b_b82k_augreg	open_clip/pretrained.py	/^    laion2b_s13b_b82k_augreg=_pcfg(hf_hub='laion\/CLIP-convnext_base_w-laion2B-s13B-b82K-augreg\/'),$/;"	v
+laion2b_s13b_b90k	open_clip/pretrained.py	/^    laion2b_s13b_b90k=_pcfg(hf_hub='laion\/CoCa-ViT-B-32-laion2B-s13B-b90k\/'),$/;"	v
+laion2b_s13b_b90k	open_clip/pretrained.py	/^    laion2b_s13b_b90k=_pcfg(hf_hub='laion\/CoCa-ViT-L-14-laion2B-s13B-b90k\/'),$/;"	v
+laion2b_s26b_b102k_augreg	open_clip/pretrained.py	/^    laion2b_s26b_b102k_augreg=_pcfg(hf_hub='laion\/CLIP-convnext_large_d.laion2B-s26B-b102K-augreg\/'),$/;"	v
+laion2b_s29b_b131k_ft	open_clip/pretrained.py	/^    laion2b_s29b_b131k_ft=_pcfg(hf_hub='laion\/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft\/'),$/;"	v
+laion2b_s29b_b131k_ft_soup	open_clip/pretrained.py	/^    laion2b_s29b_b131k_ft_soup=_pcfg(hf_hub='laion\/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup\/'),$/;"	v
+laion2b_s32b_b79k	open_clip/pretrained.py	/^    laion2b_s32b_b79k=_pcfg(hf_hub='laion\/CLIP-ViT-H-14-laion2B-s32B-b79K\/'),$/;"	v
+laion2b_s32b_b82k	open_clip/pretrained.py	/^    laion2b_s32b_b82k=_pcfg($/;"	v
+laion2b_s34b_b79k	open_clip/pretrained.py	/^    laion2b_s34b_b79k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-laion2B-s34B-b79K\/'),$/;"	v
+laion2b_s34b_b82k_augreg	open_clip/pretrained.py	/^    laion2b_s34b_b82k_augreg=_pcfg(hf_hub='laion\/CLIP-convnext_xxlarge-laion2B-s34B-b82K-augreg\/'),$/;"	v
+laion2b_s34b_b82k_augreg_rewind	open_clip/pretrained.py	/^    laion2b_s34b_b82k_augreg_rewind=_pcfg(hf_hub='laion\/CLIP-convnext_xxlarge-laion2B-s34B-b82K-augreg-rewind\/'),$/;"	v
+laion2b_s34b_b82k_augreg_soup	open_clip/pretrained.py	/^    laion2b_s34b_b82k_augreg_soup=_pcfg(hf_hub='laion\/CLIP-convnext_xxlarge-laion2B-s34B-b82K-augreg-soup\/'),$/;"	v
+laion2b_s34b_b88k	open_clip/pretrained.py	/^    laion2b_s34b_b88k=_pcfg(hf_hub='laion\/CLIP-ViT-B-16-laion2B-s34B-b88K\/'),$/;"	v
+laion2b_s34b_b88k	open_clip/pretrained.py	/^    laion2b_s34b_b88k=_pcfg(hf_hub='laion\/CLIP-ViT-g-14-laion2B-s34B-b88K\/'),$/;"	v
+laion2b_s39b_b160k	open_clip/pretrained.py	/^    laion2b_s39b_b160k=_pcfg(hf_hub='laion\/CLIP-ViT-bigG-14-laion2B-39B-b160k\/'),$/;"	v
+laion2b_s4b_b115k	open_clip/pretrained.py	/^        laion2b_s4b_b115k=_pcfg(hf_hub='timm\/eva02_enormous_patch14_clip_224.laion2b_s4b_b115k\/'),$/;"	v
+laion2b_s9b_b144k	open_clip/pretrained.py	/^        laion2b_s9b_b144k=_pcfg(hf_hub='timm\/eva02_enormous_patch14_plus_clip_224.laion2b_s9b_b144k\/'),$/;"	v
+laion400m_e31	open_clip/pretrained.py	/^    laion400m_e31=_pcfg($/;"	v
+laion400m_e32	open_clip/pretrained.py	/^    laion400m_e32=_pcfg($/;"	v
+laion400m_s11b_b41k	open_clip/pretrained.py	/^        laion400m_s11b_b41k=_pcfg(hf_hub='timm\/eva_giant_patch14_clip_224.laion400m_s11b_b41k\/'),$/;"	v
+laion400m_s13b_b51k	open_clip/pretrained.py	/^    laion400m_s13b_b51k=_pcfg(hf_hub='laion\/CLIP-convnext_base-laion400M-s13B-b51K\/'),$/;"	v
+laion5b_s13b_b90k	open_clip/pretrained.py	/^    laion5b_s13b_b90k=_pcfg(hf_hub='laion\/CLIP-ViT-B-32-xlm-roberta-base-laion5B-s13B-b90k\/'),$/;"	v
+laion_aesthetic_s13b_b82k	open_clip/pretrained.py	/^    laion_aesthetic_s13b_b82k=_pcfg(hf_hub='laion\/CLIP-convnext_base_w-laion_aesthetic-s13B-b82K\/'),$/;"	v
+laion_aesthetic_s13b_b82k	open_clip/pretrained.py	/^    laion_aesthetic_s13b_b82k=_pcfg(hf_hub='laion\/CLIP-convnext_base_w_320-laion_aesthetic-s13B-b82K\/'),$/;"	v
+laion_aesthetic_s13b_b82k_augreg	open_clip/pretrained.py	/^    laion_aesthetic_s13b_b82k_augreg=_pcfg(hf_hub='laion\/CLIP-convnext_base_w_320-laion_aesthetic-s13B-b82K-augreg\/'),$/;"	v
+launcher	work_dirs/20241129_081530/vis_data/config.py	/^launcher = 'none'$/;"	v
+launcher	work_dirs/20241129_081906/vis_data/config.py	/^launcher = 'none'$/;"	v
+launcher	work_dirs/cfg_city_scapes.py	/^launcher = 'none'$/;"	v
+layers	open_clip/model.py	/^        layers=transformer_layers,$/;"	v
+layers	open_clip/model.py	/^        layers=vision_layers,$/;"	v
+list_models	open_clip/factory.py	/^def list_models():$/;"	f
+list_openai_models	open_clip/openai.py	/^def list_openai_models() -> List[str]:$/;"	f
+list_pretrained	open_clip/pretrained.py	/^def list_pretrained(as_str: bool = False):$/;"	f
+list_pretrained_models_by_tag	open_clip/pretrained.py	/^def list_pretrained_models_by_tag(tag: str):$/;"	f
+list_pretrained_tags_by_model	open_clip/pretrained.py	/^def list_pretrained_tags_by_model(model: str):$/;"	f
+load_big_vision_weights	open_clip/big_vision.py	/^def load_big_vision_weights(model: CustomTextCLIP, checkpoint_path: str):$/;"	f
+load_checkpoint	open_clip/factory.py	/^def load_checkpoint(model, checkpoint_path, strict=True):$/;"	f
+load_from	configs/base_config.py	/^load_from = None$/;"	v
+load_from	work_dirs/20241129_081530/vis_data/config.py	/^load_from = None$/;"	v
+load_from	work_dirs/20241129_081906/vis_data/config.py	/^load_from = None$/;"	v
+load_from	work_dirs/cfg_city_scapes.py	/^load_from = None$/;"	v
+load_openai_model	open_clip/openai.py	/^def load_openai_model($/;"	f
+load_state_dict	open_clip/factory.py	/^def load_state_dict(checkpoint_path: str, map_location='cpu'):$/;"	f
+lock	open_clip/hf_model.py	/^    def lock(self, unlocked_layers: int = 0, freeze_layer_norm: bool = True):$/;"	m	class:HFTextEncoder
+lock	open_clip/modified_resnet.py	/^    def lock(self, unlocked_groups=0, freeze_bn_stats=False):$/;"	m	class:ModifiedResNet
+lock	open_clip/timm_model.py	/^    def lock(self, unlocked_groups=0, freeze_bn_stats=False):$/;"	m	class:TimmModel
+lock	open_clip/transformer.py	/^    def lock(self, unlocked_groups=0, freeze_bn_stats=False):$/;"	m	class:VisionTransformer
+lock_image_tower	open_clip/model.py	/^    def lock_image_tower(self, unlocked_groups=0, freeze_bn_stats=False):$/;"	m	class:CLIP
+lock_image_tower	open_clip/model.py	/^    def lock_image_tower(self, unlocked_groups=0, freeze_bn_stats=False):$/;"	m	class:CustomTextCLIP
+lock_text_tower	open_clip/model.py	/^    def lock_text_tower(self, unlocked_layers: int = 0, freeze_layer_norm: bool = True):$/;"	m	class:CustomTextCLIP
+log_level	configs/base_config.py	/^log_level = 'INFO'$/;"	v
+log_level	work_dirs/20241129_081530/vis_data/config.py	/^log_level = 'INFO'$/;"	v
+log_level	work_dirs/20241129_081906/vis_data/config.py	/^log_level = 'INFO'$/;"	v
+log_level	work_dirs/cfg_city_scapes.py	/^log_level = 'INFO'$/;"	v
+log_processor	configs/base_config.py	/^log_processor = dict(by_epoch=False)$/;"	v
+log_processor	work_dirs/20241129_081530/vis_data/config.py	/^log_processor = dict(by_epoch=False)$/;"	v
+log_processor	work_dirs/20241129_081906/vis_data/config.py	/^log_processor = dict(by_epoch=False)$/;"	v
+log_processor	work_dirs/cfg_city_scapes.py	/^log_processor = dict(by_epoch=False)$/;"	v
+logger	configs/base_config.py	/^    logger=dict(type='LoggerHook', interval=50, log_metric_by_epoch=False),$/;"	v
+logger	work_dirs/20241129_081530/vis_data/config.py	/^    logger=dict(interval=50, log_metric_by_epoch=False, type='LoggerHook'),$/;"	v
+logger	work_dirs/20241129_081906/vis_data/config.py	/^    logger=dict(interval=50, log_metric_by_epoch=False, type='LoggerHook'),$/;"	v
+logger	work_dirs/cfg_city_scapes.py	/^    logger=dict(interval=50, log_metric_by_epoch=False, type='LoggerHook'),$/;"	v
+loss	proxyclip_segmentor.py	/^    def loss(self, inputs, data_samples):$/;"	m	class:ProxyCLIPSegmentation
+main	datasets/cvt_coco_object.py	/^def main():$/;"	f
+main	eval.py	/^def main():$/;"	f
+mask_decoder	segment_anything/build_sam.py	/^        mask_decoder=MaskDecoder($/;"	v
+mask_in_chans	segment_anything/build_sam.py	/^            mask_in_chans=16,$/;"	v
+mask_postprocessing	segment_anything/utils/onnx.py	/^    def mask_postprocessing(self, masks: torch.Tensor, orig_im_size: torch.Tensor) -> torch.Tensor:$/;"	m	class:SamOnnxModel
+mask_to_rle_pytorch	segment_anything/utils/amg.py	/^def mask_to_rle_pytorch(tensor: torch.Tensor) -> List[Dict[str, Any]]:$/;"	f
+merge_preprocess_dict	open_clip/transform.py	/^def merge_preprocess_dict($/;"	f
+merge_preprocess_kwargs	open_clip/transform.py	/^def merge_preprocess_kwargs(base: PreprocessCfg, **kwargs):$/;"	f
+merged2b_s11b_b114k	open_clip/pretrained.py	/^        merged2b_s11b_b114k=_pcfg(hf_hub='timm\/eva_giant_patch14_plus_clip_224.merged2b_s11b_b114k\/'),$/;"	v
+merged2b_s4b_b131k	open_clip/pretrained.py	/^        merged2b_s4b_b131k=_pcfg(hf_hub='timm\/eva02_large_patch14_clip_224.merged2b_s4b_b131k\/'),$/;"	v
+merged2b_s6b_b61k	open_clip/pretrained.py	/^        merged2b_s6b_b61k=_pcfg(hf_hub='timm\/eva02_large_patch14_clip_336.merged2b_s6b_b61k\/'),$/;"	v
+merged2b_s8b_b131k	open_clip/pretrained.py	/^        merged2b_s8b_b131k=_pcfg(hf_hub='timm\/eva02_base_patch16_clip_224.merged2b_s8b_b131k\/'),$/;"	v
+metaclip_400m	open_clip/pretrained.py	/^    metaclip_400m=_pcfg($/;"	v
+metaclip_fullcc	open_clip/pretrained.py	/^    metaclip_fullcc=_pcfg($/;"	v
+mlp_dim	segment_anything/build_sam.py	/^                mlp_dim=2048,$/;"	v
+mlp_ratio	segment_anything/build_sam.py	/^            mlp_ratio=4,$/;"	v
+model	configs/base_config.py	/^model = dict($/;"	v
+model	configs/cfg_ade20k.py	/^model = dict($/;"	v
+model	configs/cfg_ade847.py	/^model = dict($/;"	v
+model	configs/cfg_city_scapes.py	/^model = dict($/;"	v
+model	configs/cfg_coco_object.py	/^model = dict($/;"	v
+model	configs/cfg_coco_stuff164k.py	/^model = dict($/;"	v
+model	configs/cfg_context459.py	/^model = dict($/;"	v
+model	configs/cfg_context59.py	/^model = dict($/;"	v
+model	configs/cfg_context60.py	/^model = dict($/;"	v
+model	configs/cfg_voc20.py	/^model = dict($/;"	v
+model	configs/cfg_voc21.py	/^model = dict($/;"	v
+model	demo.py	/^model = ProxyCLIPSegmentation(clip_type='openai', model_type='ViT-B\/16', vfm_model='dino',$/;"	v
+model	open_clip/model.py	/^    model = CLIP($/;"	v
+model	work_dirs/20241129_081530/vis_data/config.py	/^model = dict($/;"	v
+model	work_dirs/20241129_081906/vis_data/config.py	/^model = dict($/;"	v
+model	work_dirs/cfg_city_scapes.py	/^model = dict($/;"	v
+model_type	configs/base_config.py	/^    model_type='ViT-B\/16',$/;"	v
+model_type	work_dirs/20241129_081530/vis_data/config.py	/^    model_type='ViT-B\/16',$/;"	v
+model_type	work_dirs/20241129_081906/vis_data/config.py	/^    model_type='ViT-B\/16',$/;"	v
+model_type	work_dirs/cfg_city_scapes.py	/^    model_type='ViT-B\/16',$/;"	v
+mp_cfg	configs/base_config.py	/^    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0),$/;"	v
+mp_cfg	work_dirs/20241129_081530/vis_data/config.py	/^    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))$/;"	v
+mp_cfg	work_dirs/20241129_081906/vis_data/config.py	/^    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))$/;"	v
+mp_cfg	work_dirs/cfg_city_scapes.py	/^    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))$/;"	v
+mscoco_finetuned_laion2b_s13b_b90k	open_clip/pretrained.py	/^    mscoco_finetuned_laion2b_s13b_b90k=_pcfg(hf_hub='laion\/mscoco_finetuned_CoCa-ViT-B-32-laion2B-s13B-b90k\/')$/;"	v
+mscoco_finetuned_laion2b_s13b_b90k	open_clip/pretrained.py	/^    mscoco_finetuned_laion2b_s13b_b90k=_pcfg(hf_hub='laion\/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k\/')$/;"	v
+name	work_dirs/20241129_081530/vis_data/config.py	/^    name='visualizer',$/;"	v
+name	work_dirs/20241129_081906/vis_data/config.py	/^    name='visualizer',$/;"	v
+name	work_dirs/cfg_city_scapes.py	/^    name='visualizer',$/;"	v
+name_list	demo.py	/^name_list = ['sky', 'hill', 'tree', 'horse', 'grass']$/;"	v
+name_path	configs/cfg_ade20k.py	/^    name_path='.\/configs\/cls_ade20k.txt'$/;"	v
+name_path	configs/cfg_ade847.py	/^    name_path='.\/configs\/cls_ade20k847.txt'$/;"	v
+name_path	configs/cfg_city_scapes.py	/^    name_path='.\/configs\/cls_city_scapes.txt',$/;"	v
+name_path	configs/cfg_coco_object.py	/^    name_path='.\/configs\/cls_coco_object.txt',$/;"	v
+name_path	configs/cfg_coco_stuff164k.py	/^    name_path='.\/configs\/cls_coco_stuff.txt'$/;"	v
+name_path	configs/cfg_context459.py	/^    name_path='.\/configs\/cls_context459.txt'$/;"	v
+name_path	configs/cfg_context59.py	/^    name_path='.\/configs\/cls_context59.txt'$/;"	v
+name_path	configs/cfg_context60.py	/^    name_path='.\/configs\/cls_context60.txt',$/;"	v
+name_path	configs/cfg_voc20.py	/^    name_path='.\/configs\/cls_voc20.txt'$/;"	v
+name_path	configs/cfg_voc21.py	/^    name_path='.\/configs\/cls_voc21.txt',$/;"	v
+name_path	demo.py	/^                              name_path='.\/configs\/my_name.txt')$/;"	v
+name_path	work_dirs/20241129_081530/vis_data/config.py	/^    name_path='.\/configs\/cls_city_scapes.txt',$/;"	v
+name_path	work_dirs/20241129_081906/vis_data/config.py	/^    name_path='.\/configs\/cls_city_scapes.txt',$/;"	v
+name_path	work_dirs/cfg_city_scapes.py	/^    name_path='.\/configs\/cls_city_scapes.txt',$/;"	v
+neighbour_exchange	open_clip/loss.py	/^def neighbour_exchange(from_rank, to_rank, tensor, group=None):$/;"	f
+neighbour_exchange_bidir	open_clip/loss.py	/^def neighbour_exchange_bidir(left_rank, right_rank, tensor_to_left, tensor_to_right, group=None):$/;"	f
+neighbour_exchange_bidir_with_grad	open_clip/loss.py	/^def neighbour_exchange_bidir_with_grad(left_rank, right_rank, tensor_to_left, tensor_to_right, group=None):$/;"	f
+neighbour_exchange_with_grad	open_clip/loss.py	/^def neighbour_exchange_with_grad(from_rank, to_rank, tensor, group=None):$/;"	f
+norm_layer	segment_anything/build_sam.py	/^            norm_layer=partial(torch.nn.LayerNorm, eps=1e-6),$/;"	v
+num_channels	open_clip/transform.py	/^    def num_channels(self):$/;"	m	class:PreprocessCfg
+num_heads	segment_anything/build_sam.py	/^                num_heads=8,$/;"	v
+num_heads	segment_anything/build_sam.py	/^            num_heads=encoder_num_heads,$/;"	v
+num_multimask_outputs	segment_anything/build_sam.py	/^            num_multimask_outputs=3,$/;"	v
+num_workers	configs/cfg_ade20k.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_ade847.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_city_scapes.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_coco_object.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_coco_stuff164k.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_context459.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_context59.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_context60.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_voc20.py	/^    num_workers=4,$/;"	v
+num_workers	configs/cfg_voc21.py	/^    num_workers=4,$/;"	v
+num_workers	work_dirs/20241129_081530/vis_data/config.py	/^    num_workers=4,$/;"	v
+num_workers	work_dirs/20241129_081906/vis_data/config.py	/^    num_workers=4,$/;"	v
+num_workers	work_dirs/cfg_city_scapes.py	/^    num_workers=4,$/;"	v
+openai	open_clip/pretrained.py	/^    openai=_pcfg($/;"	v
+openai_imagenet_template	prompts/imagenet_template.py	/^openai_imagenet_template = [$/;"	v
+out_chans	segment_anything/build_sam.py	/^            out_chans=prompt_embed_dim,$/;"	v
+output_width	open_clip/model.py	/^        output_width = round((state_dict["visual.attnpool.positional_embedding"].shape[0] - 1) ** 0.5)$/;"	v
+palette	custom_datasets.py	/^        palette=[[0, 0, 0], [0, 192, 64], [0, 192, 64], [0, 64, 96], [128, 192, 192], [0, 64, 64], [0, 192, 224],$/;"	v	class:COCOObjectDataset
+palette	custom_datasets.py	/^        palette=[[120, 120, 120], [180, 120, 120], [6, 230, 230], [80, 50, 50],$/;"	v	class:PascalContext60Dataset
+palette	custom_datasets.py	/^        palette=[[128, 0, 0], [0, 128, 0], [0, 0, 192],$/;"	v	class:PascalVOC20Dataset
+palette	custom_datasets.py	/^        palette=[[180, 120, 120], [6, 230, 230], [80, 50, 50], [4, 200, 3],$/;"	v	class:PascalContext59Dataset
+param_scheduler	configs/base_config.py	/^    param_scheduler=dict(type='ParamSchedulerHook'),$/;"	v
+param_scheduler	work_dirs/20241129_081530/vis_data/config.py	/^    param_scheduler=dict(type='ParamSchedulerHook'),$/;"	v
+param_scheduler	work_dirs/20241129_081906/vis_data/config.py	/^    param_scheduler=dict(type='ParamSchedulerHook'),$/;"	v
+param_scheduler	work_dirs/cfg_city_scapes.py	/^    param_scheduler=dict(type='ParamSchedulerHook'),$/;"	v
+parse	open_clip/utils.py	/^    def parse(x):$/;"	f	function:_ntuple
+parse_args	datasets/cvt_coco_object.py	/^def parse_args():$/;"	f
+parse_args	eval.py	/^def parse_args():$/;"	f
+parser	open_clip/push_to_hf_hub.py	/^    parser = argparse.ArgumentParser(description="Push to Hugging Face Hub")$/;"	v
+patch_size	open_clip/model.py	/^        patch_size=vision_patch_size,$/;"	v
+patch_size	segment_anything/build_sam.py	/^            patch_size=vit_patch_size,$/;"	v
+persistent_workers	configs/cfg_ade20k.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_ade847.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_city_scapes.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_coco_object.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_coco_stuff164k.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_context459.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_context59.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_context60.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_voc20.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	configs/cfg_voc21.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	work_dirs/20241129_081530/vis_data/config.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	work_dirs/20241129_081906/vis_data/config.py	/^    persistent_workers=True,$/;"	v
+persistent_workers	work_dirs/cfg_city_scapes.py	/^    persistent_workers=True,$/;"	v
+pipeline	configs/cfg_ade20k.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_ade847.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_city_scapes.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_coco_object.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_coco_stuff164k.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_context459.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_context59.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_context60.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_voc20.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	configs/cfg_voc21.py	/^        pipeline=test_pipeline))/;"	v
+pipeline	work_dirs/20241129_081530/vis_data/config.py	/^        pipeline=[$/;"	v
+pipeline	work_dirs/20241129_081906/vis_data/config.py	/^        pipeline=[$/;"	v
+pipeline	work_dirs/cfg_city_scapes.py	/^        pipeline=[$/;"	v
+pixel_mean	segment_anything/build_sam.py	/^        pixel_mean=[123.675, 116.28, 103.53],$/;"	v
+pixel_std	segment_anything/build_sam.py	/^        pixel_std=[58.395, 57.12, 57.375],$/;"	v
+postprocess_masks	segment_anything/modeling/sam.py	/^    def postprocess_masks($/;"	m	class:Sam
+postprocess_result	proxyclip_segmentor.py	/^    def postprocess_result(self, seg_logits, data_samples):$/;"	m	class:ProxyCLIPSegmentation
+postprocess_small_regions	segment_anything/automatic_mask_generator.py	/^    def postprocess_small_regions($/;"	m	class:SamAutomaticMaskGenerator
+precision	open_clip/push_to_hf_hub.py	/^        precision=args.precision,$/;"	v
+predict	proxyclip_segmentor.py	/^    def predict(self, inputs, data_samples):$/;"	m	class:ProxyCLIPSegmentation
+predict	segment_anything/predictor.py	/^    def predict($/;"	m	class:SamPredictor
+predict_masks	segment_anything/modeling/mask_decoder.py	/^    def predict_masks($/;"	m	class:MaskDecoder
+predict_torch	segment_anything/predictor.py	/^    def predict_torch($/;"	m	class:SamPredictor
+prepare_inputs_for_generation	open_clip/coca_model.py	/^def prepare_inputs_for_generation(input_ids, image_inputs, past=None, **kwargs):$/;"	f
+preprocess	segment_anything/modeling/sam.py	/^    def preprocess(self, x: torch.Tensor) -> torch.Tensor:$/;"	m	class:Sam
+prob_thd	configs/cfg_coco_object.py	/^    prob_thd=0.25,   # 0.25 OURS   0.1 CLIP$/;"	v
+prob_thd	configs/cfg_context60.py	/^    prob_thd=0.15  # 0.15 OURS   0.05 CLIP$/;"	v
+prob_thd	configs/cfg_voc21.py	/^    prob_thd= 0.2     # 0.2  OURS  0.1 CLIP-B\/16$/;"	v
+prompt_embed_dim	segment_anything/build_sam.py	/^    prompt_embed_dim = 256$/;"	v
+prompt_encoder	segment_anything/build_sam.py	/^        prompt_encoder=PromptEncoder($/;"	v
+push_pretrained_to_hf_hub	open_clip/push_to_hf_hub.py	/^def push_pretrained_to_hf_hub($/;"	f
+push_to_hf_hub	open_clip/push_to_hf_hub.py	/^def push_to_hf_hub($/;"	f
+qkv_bias	segment_anything/build_sam.py	/^            qkv_bias=True,$/;"	v
+quick_gelu	open_clip/model.py	/^        quick_gelu=quick_gelu,  # OpenAI models were trained with QuickGELU$/;"	v
+random_mask_tokenize	open_clip/tokenizer.py	/^def random_mask_tokenize($/;"	f
+reduce_zero_label	configs/cfg_coco_object.py	/^        reduce_zero_label=False,$/;"	v
+register_pooler	open_clip/hf_model.py	/^def register_pooler(cls):$/;"	f
+remove_small_regions	segment_anything/utils/amg.py	/^def remove_small_regions($/;"	f
+replace_linear	open_clip/utils.py	/^def replace_linear(model, linear_replacement, include_modules=['c_fc', 'c_proj'], copy_weights=True):$/;"	f
+reset_image	segment_anything/predictor.py	/^    def reset_image(self) -> None:$/;"	m	class:SamPredictor
+resize_longest_image_size	segment_anything/utils/onnx.py	/^    def resize_longest_image_size($/;"	m	class:SamOnnxModel
+resize_mode	open_clip/pretrained.py	/^        resize_mode="squash"$/;"	v
+resize_pos_embed	open_clip/model.py	/^def resize_pos_embed(state_dict, model, interpolation: str = 'bicubic', antialias: bool = True):$/;"	f
+resize_text_pos_embed	open_clip/model.py	/^def resize_text_pos_embed(state_dict, model, interpolation: str = 'linear', antialias: bool = False):$/;"	f
+resume	configs/base_config.py	/^resume = False$/;"	v
+resume	work_dirs/20241129_081530/vis_data/config.py	/^resume = False$/;"	v
+resume	work_dirs/20241129_081906/vis_data/config.py	/^resume = False$/;"	v
+resume	work_dirs/cfg_city_scapes.py	/^resume = False$/;"	v
+rle_to_mask	segment_anything/utils/amg.py	/^def rle_to_mask(rle: Dict[str, Any]) -> np.ndarray:$/;"	f
+sam	segment_anything/build_sam.py	/^    sam = Sam($/;"	v
+sam_model_registry	segment_anything/build_sam.py	/^sam_model_registry = {$/;"	v
+sampler	configs/cfg_ade20k.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_ade847.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_city_scapes.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_coco_object.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_coco_stuff164k.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_context459.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_context59.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_context60.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_voc20.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	configs/cfg_voc21.py	/^    sampler=dict(type='DefaultSampler', shuffle=False),$/;"	v
+sampler	work_dirs/20241129_081530/vis_data/config.py	/^    sampler=dict(shuffle=False, type='DefaultSampler'))$/;"	v
+sampler	work_dirs/20241129_081906/vis_data/config.py	/^    sampler=dict(shuffle=False, type='DefaultSampler'))$/;"	v
+sampler	work_dirs/cfg_city_scapes.py	/^    sampler=dict(shuffle=False, type='DefaultSampler'))$/;"	v
+sampler_seed	configs/base_config.py	/^    sampler_seed=dict(type='DistSamplerSeedHook'),$/;"	v
+sampler_seed	work_dirs/20241129_081530/vis_data/config.py	/^    sampler_seed=dict(type='DistSamplerSeedHook'),$/;"	v
+sampler_seed	work_dirs/20241129_081906/vis_data/config.py	/^    sampler_seed=dict(type='DistSamplerSeedHook'),$/;"	v
+sampler_seed	work_dirs/cfg_city_scapes.py	/^    sampler_seed=dict(type='DistSamplerSeedHook'),$/;"	v
+save_config_for_hf	open_clip/push_to_hf_hub.py	/^def save_config_for_hf($/;"	f
+save_for_hf	open_clip/push_to_hf_hub.py	/^def save_for_hf($/;"	f
+save_pretrained	open_clip/tokenizer.py	/^    def save_pretrained(self, dest):$/;"	m	class:HFTokenizer
+save_pretrained	open_clip/tokenizer.py	/^    def save_pretrained(self, dest):$/;"	m	class:SigLipTokenizer
+seg_map_path	configs/cfg_ade20k.py	/^            seg_map_path='annotations\/validation'),$/;"	v
+seg_map_path	configs/cfg_ade847.py	/^            seg_map_path='annotations_detectron2\/validation'),$/;"	v
+seg_pred	demo.py	/^seg_pred = model.predict(img_tensor, data_samples=None)$/;"	v
+seg_pred	demo.py	/^seg_pred = seg_pred.data.cpu().numpy().squeeze(0)$/;"	v
+select_masks	segment_anything/utils/onnx.py	/^    def select_masks($/;"	m	class:SamOnnxModel
+set_grad_checkpointing	open_clip/coca_model.py	/^    def set_grad_checkpointing(self, enable: bool = True):$/;"	m	class:CoCa
+set_grad_checkpointing	open_clip/hf_model.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:HFTextEncoder
+set_grad_checkpointing	open_clip/model.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:CLIP
+set_grad_checkpointing	open_clip/model.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:CustomTextCLIP
+set_grad_checkpointing	open_clip/modified_resnet.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:ModifiedResNet
+set_grad_checkpointing	open_clip/timm_model.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:TimmModel
+set_grad_checkpointing	open_clip/transformer.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:MultimodalTransformer
+set_grad_checkpointing	open_clip/transformer.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:TextTransformer
+set_grad_checkpointing	open_clip/transformer.py	/^    def set_grad_checkpointing(self, enable=True):$/;"	m	class:VisionTransformer
+set_image	segment_anything/predictor.py	/^    def set_image($/;"	m	class:SamPredictor
+set_language	open_clip/tokenizer.py	/^    def set_language(self, src_lang):$/;"	m	class:HFTokenizer
+set_model_preprocess_cfg	open_clip/model.py	/^def set_model_preprocess_cfg(model, preprocess_cfg: Dict[str, Any]):$/;"	f
+set_torch_image	segment_anything/predictor.py	/^    def set_torch_image($/;"	m	class:SamPredictor
+simple_mask_tokenize	open_clip/tokenizer.py	/^def simple_mask_tokenize($/;"	f
+slide_crop	configs/cfg_city_scapes.py	/^    slide_crop=224$/;"	v
+slide_crop	work_dirs/20241129_081530/vis_data/config.py	/^    slide_crop=224,$/;"	v
+slide_crop	work_dirs/20241129_081906/vis_data/config.py	/^    slide_crop=224,$/;"	v
+slide_crop	work_dirs/cfg_city_scapes.py	/^    slide_crop=224,$/;"	v
+slide_stride	configs/cfg_city_scapes.py	/^    slide_stride=112,$/;"	v
+slide_stride	work_dirs/20241129_081530/vis_data/config.py	/^    slide_stride=112,$/;"	v
+slide_stride	work_dirs/20241129_081906/vis_data/config.py	/^    slide_stride=112,$/;"	v
+slide_stride	work_dirs/cfg_city_scapes.py	/^    slide_stride=112,$/;"	v
+state_dict	segment_anything/build_sam.py	/^            state_dict = torch.load(f)$/;"	v
+stem	open_clip/modified_resnet.py	/^    def stem(self, x):$/;"	m	class:ModifiedResNet
+sub_imagenet_template	prompts/imagenet_template.py	/^sub_imagenet_template = [$/;"	v
+syntax_mask_tokenize	open_clip/tokenizer.py	/^def syntax_mask_tokenize($/;"	f
+test_cfg	configs/base_config.py	/^test_cfg = dict(type='TestLoop')$/;"	v
+test_cfg	work_dirs/20241129_081530/vis_data/config.py	/^test_cfg = dict(type='TestLoop')$/;"	v
+test_cfg	work_dirs/20241129_081906/vis_data/config.py	/^test_cfg = dict(type='TestLoop')$/;"	v
+test_cfg	work_dirs/cfg_city_scapes.py	/^test_cfg = dict(type='TestLoop')$/;"	v
+test_dataloader	configs/cfg_ade20k.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_ade847.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_city_scapes.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_coco_object.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_coco_stuff164k.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_context459.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_context59.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_context60.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_voc20.py	/^test_dataloader = dict($/;"	v
+test_dataloader	configs/cfg_voc21.py	/^test_dataloader = dict($/;"	v
+test_dataloader	work_dirs/20241129_081530/vis_data/config.py	/^test_dataloader = dict($/;"	v
+test_dataloader	work_dirs/20241129_081906/vis_data/config.py	/^test_dataloader = dict($/;"	v
+test_dataloader	work_dirs/cfg_city_scapes.py	/^test_dataloader = dict($/;"	v
+test_evaluator	configs/base_config.py	/^test_evaluator = dict(type='IoUMetric', iou_metrics=['mIoU'])$/;"	v
+test_evaluator	work_dirs/20241129_081530/vis_data/config.py	/^test_evaluator = dict($/;"	v
+test_evaluator	work_dirs/20241129_081906/vis_data/config.py	/^test_evaluator = dict($/;"	v
+test_evaluator	work_dirs/cfg_city_scapes.py	/^test_evaluator = dict($/;"	v
+test_pipeline	configs/cfg_ade20k.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_ade847.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_city_scapes.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_coco_object.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_coco_stuff164k.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_context459.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_context59.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_context60.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_voc20.py	/^test_pipeline = [$/;"	v
+test_pipeline	configs/cfg_voc21.py	/^test_pipeline = [$/;"	v
+test_pipeline	work_dirs/20241129_081530/vis_data/config.py	/^test_pipeline = [$/;"	v
+test_pipeline	work_dirs/20241129_081906/vis_data/config.py	/^test_pipeline = [$/;"	v
+test_pipeline	work_dirs/cfg_city_scapes.py	/^test_pipeline = [$/;"	v
+text_cfg	open_clip/model.py	/^        text_cfg=text_cfg,$/;"	v
+text_cfg	open_clip/model.py	/^    text_cfg = CLIPTextCfg($/;"	v
+text_global_pool	open_clip/transformer.py	/^def text_global_pool(x, text: Optional[torch.Tensor] = None, pool_type: str = 'argmax'):$/;"	f
+timer	configs/base_config.py	/^    timer=dict(type='IterTimerHook'),$/;"	v
+timer	work_dirs/20241129_081530/vis_data/config.py	/^    timer=dict(type='IterTimerHook'),$/;"	v
+timer	work_dirs/20241129_081906/vis_data/config.py	/^    timer=dict(type='IterTimerHook'),$/;"	v
+timer	work_dirs/cfg_city_scapes.py	/^    timer=dict(type='IterTimerHook'),$/;"	v
+timm	open_clip/timm_model.py	/^    timm = None$/;"	v
+to_1tuple	open_clip/utils.py	/^to_1tuple = _ntuple(1)$/;"	v
+to_2tuple	open_clip/utils.py	/^to_2tuple = _ntuple(2)$/;"	v
+to_3tuple	open_clip/utils.py	/^to_3tuple = _ntuple(3)$/;"	v
+to_4tuple	open_clip/utils.py	/^to_4tuple = _ntuple(4)$/;"	v
+to_ntuple	open_clip/utils.py	/^to_ntuple = lambda n, x: _ntuple(n)(x)$/;"	v
+to_numpy	segment_anything/utils/amg.py	/^    def to_numpy(self) -> None:$/;"	m	class:MaskData
+tokenize	open_clip/tokenizer.py	/^def tokenize(texts: Union[str, List[str]], context_length: int = DEFAULT_CONTEXT_LENGTH) -> torch.LongTensor:$/;"	f
+trace_model	open_clip/model.py	/^def trace_model(model, batch_size=256, device=torch.device('cpu')):$/;"	f
+transformer	segment_anything/build_sam.py	/^            transformer=TwoWayTransformer($/;"	v
+transformer_dim	segment_anything/build_sam.py	/^            transformer_dim=prompt_embed_dim,$/;"	v
+transformer_heads	open_clip/model.py	/^    transformer_heads = transformer_width \/\/ 64$/;"	v
+transformer_layers	open_clip/model.py	/^    transformer_layers = len(set(k.split(".")[2] for k in state_dict if k.startswith(f"transformer.resblocks")))$/;"	v
+transformer_width	open_clip/model.py	/^    transformer_width = state_dict["ln_final.weight"].shape[0]$/;"	v
+transformers	open_clip/hf_model.py	/^    transformers = None$/;"	v
+trigger_visualization_hook	eval.py	/^def trigger_visualization_hook(cfg, args):$/;"	f
+type	configs/base_config.py	/^    type='ProxyCLIPSegmentation',$/;"	v
+type	configs/cfg_ade20k.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_ade847.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_city_scapes.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_coco_object.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_coco_stuff164k.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_context459.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_context59.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_context60.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_voc20.py	/^        type=dataset_type,$/;"	v
+type	configs/cfg_voc21.py	/^        type=dataset_type,$/;"	v
+type	work_dirs/20241129_081530/vis_data/config.py	/^        type='CityscapesDataset'),$/;"	v
+type	work_dirs/20241129_081530/vis_data/config.py	/^    type='ProxyCLIPSegmentation',$/;"	v
+type	work_dirs/20241129_081530/vis_data/config.py	/^    type='SegLocalVisualizer',$/;"	v
+type	work_dirs/20241129_081906/vis_data/config.py	/^        type='CityscapesDataset'),$/;"	v
+type	work_dirs/20241129_081906/vis_data/config.py	/^    type='ProxyCLIPSegmentation',$/;"	v
+type	work_dirs/20241129_081906/vis_data/config.py	/^    type='SegLocalVisualizer',$/;"	v
+type	work_dirs/cfg_city_scapes.py	/^        type='CityscapesDataset'),$/;"	v
+type	work_dirs/cfg_city_scapes.py	/^    type='ProxyCLIPSegmentation',$/;"	v
+type	work_dirs/cfg_city_scapes.py	/^    type='SegLocalVisualizer',$/;"	v
+uncrop_boxes_xyxy	segment_anything/utils/amg.py	/^def uncrop_boxes_xyxy(boxes: torch.Tensor, crop_box: List[int]) -> torch.Tensor:$/;"	f
+uncrop_masks	segment_anything/utils/amg.py	/^def uncrop_masks($/;"	f
+uncrop_points	segment_anything/utils/amg.py	/^def uncrop_points(points: torch.Tensor, crop_box: List[int]) -> torch.Tensor:$/;"	f
+use_rel_pos	segment_anything/build_sam.py	/^            use_rel_pos=True,$/;"	v
+v1	open_clip/pretrained.py	/^        v1=_pcfg(hf_hub='visheratin\/nllb-clip-base-oc\/'),$/;"	v
+v1	open_clip/pretrained.py	/^        v1=_pcfg(hf_hub='visheratin\/nllb-clip-large-oc\/'),$/;"	v
+v1	open_clip/pretrained.py	/^        v1=_slpcfg(hf_hub='visheratin\/nllb-clip-base-siglip\/'),$/;"	v
+v1	open_clip/pretrained.py	/^        v1=_slpcfg(hf_hub='visheratin\/nllb-clip-large-siglip\/'),$/;"	v
+vfm_model	configs/base_config.py	/^    vfm_model='dino',   # sam, mae, dino, dinov2$/;"	v
+vfm_model	work_dirs/20241129_081530/vis_data/config.py	/^    vfm_model='dino')$/;"	v
+vfm_model	work_dirs/20241129_081906/vis_data/config.py	/^    vfm_model='dino')$/;"	v
+vfm_model	work_dirs/cfg_city_scapes.py	/^    vfm_model='dino')$/;"	v
+vis_backends	configs/base_config.py	/^vis_backends = [dict(type='LocalVisBackend')]$/;"	v
+vis_backends	work_dirs/20241129_081530/vis_data/config.py	/^    vis_backends=[$/;"	v
+vis_backends	work_dirs/20241129_081530/vis_data/config.py	/^vis_backends = [$/;"	v
+vis_backends	work_dirs/20241129_081906/vis_data/config.py	/^    vis_backends=[$/;"	v
+vis_backends	work_dirs/20241129_081906/vis_data/config.py	/^vis_backends = [$/;"	v
+vis_backends	work_dirs/cfg_city_scapes.py	/^    vis_backends=[$/;"	v
+vis_backends	work_dirs/cfg_city_scapes.py	/^vis_backends = [$/;"	v
+vision_cfg	open_clip/model.py	/^        vision_cfg=vision_cfg,$/;"	v
+vision_cfg	open_clip/model.py	/^    vision_cfg = CLIPVisionCfg($/;"	v
+vision_layers	open_clip/model.py	/^        vision_layers = len($/;"	v
+vision_layers	open_clip/model.py	/^        vision_layers = tuple(counts)$/;"	v
+vision_patch_size	open_clip/model.py	/^        vision_patch_size = None$/;"	v
+vision_patch_size	open_clip/model.py	/^        vision_patch_size = state_dict["visual.conv1.weight"].shape[-1]$/;"	v
+vision_width	open_clip/model.py	/^        vision_width = state_dict["visual.conv1.weight"].shape[0]$/;"	v
+vision_width	open_clip/model.py	/^        vision_width = state_dict["visual.layer1.0.conv1.weight"].shape[0]$/;"	v
+visualization	configs/base_config.py	/^    visualization=dict(type='SegVisualizationHook', interval=5))/;"	v
+visualization	work_dirs/20241129_081530/vis_data/config.py	/^    visualization=dict(interval=5, type='SegVisualizationHook'))$/;"	v
+visualization	work_dirs/20241129_081906/vis_data/config.py	/^    visualization=dict(interval=5, type='SegVisualizationHook'))$/;"	v
+visualization	work_dirs/cfg_city_scapes.py	/^    visualization=dict(interval=5, type='SegVisualizationHook'))$/;"	v
+visualizer	configs/base_config.py	/^visualizer = dict($/;"	v
+visualizer	work_dirs/20241129_081530/vis_data/config.py	/^visualizer = dict($/;"	v
+visualizer	work_dirs/20241129_081906/vis_data/config.py	/^visualizer = dict($/;"	v
+visualizer	work_dirs/cfg_city_scapes.py	/^visualizer = dict($/;"	v
+vit	open_clip/model.py	/^    vit = "visual.proj" in state_dict$/;"	v
+vit_base_patch16	mae/models_vit.py	/^def vit_base_patch16(**kwargs):$/;"	f
+vit_huge_patch14	mae/models_vit.py	/^def vit_huge_patch14(**kwargs):$/;"	f
+vit_large_patch16	mae/models_vit.py	/^def vit_large_patch16(**kwargs):$/;"	f
+vit_patch_size	segment_anything/build_sam.py	/^    vit_patch_size = 16$/;"	v
+vocab_size	open_clip/model.py	/^        vocab_size=vocab_size,$/;"	v
+vocab_size	open_clip/model.py	/^    vocab_size = state_dict["token_embedding.weight"].shape[0]$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-B-16-SigLIP-256\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-B-16-SigLIP-384\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-B-16-SigLIP-512\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-B-16-SigLIP-i18n-256\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-B-16-SigLIP\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-L-16-SigLIP-256\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-L-16-SigLIP-384\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-SO400M-14-SigLIP-384\/'),$/;"	v
+webli	open_clip/pretrained.py	/^        webli=_slpcfg(hf_hub='timm\/ViT-SO400M-14-SigLIP\/'),$/;"	v
+whitespace_clean	open_clip/tokenizer.py	/^def whitespace_clean(text):$/;"	f
+width	open_clip/model.py	/^        width=transformer_width,$/;"	v
+width	open_clip/model.py	/^        width=vision_width,$/;"	v
+window_partition	segment_anything/modeling/image_encoder.py	/^def window_partition(x: torch.Tensor, window_size: int) -> Tuple[torch.Tensor, Tuple[int, int]]:$/;"	f
+window_size	segment_anything/build_sam.py	/^            window_size=14,$/;"	v
+window_unpartition	segment_anything/modeling/image_encoder.py	/^def window_unpartition($/;"	f
+work_dir	work_dirs/20241129_081530/vis_data/config.py	/^work_dir = 'work_dirs'$/;"	v
+work_dir	work_dirs/20241129_081906/vis_data/config.py	/^work_dir = 'work_dirs'$/;"	v
+work_dir	work_dirs/cfg_city_scapes.py	/^work_dir = 'work_dirs'$/;"	v
+yfcc15m	open_clip/pretrained.py	/^    yfcc15m=_pcfg($/;"	v
