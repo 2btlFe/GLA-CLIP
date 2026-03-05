@@ -1,6 +1,11 @@
 # Looking Beyond the Window: Global-Local Aligned CLIP for Training-free Open-Vocabulary Semantic Segmentation (CVPR 2026)
 ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</sup>, WonJun Moon</sup>, Jae-Pil Heo</sup>
 
+
+## Issue
+The whole contents of the code will be updated soon. 
+
+
 ## Abstract
 > A sliding-window inference strategy is commonly adopted
 in recent training-free open-vocabulary semantic segmen-
