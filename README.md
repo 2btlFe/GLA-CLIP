@@ -11,32 +11,19 @@ The whole contents of the code will be updated soon.
 
 ## Abstract
 > A sliding-window inference strategy is commonly adopted
-in recent training-free open-vocabulary semantic segmen-
-tation methods to overcome limitation of the CLIP in pro-
-cessing high-resolution images. However, this approach in-
-troduces a new challenge: each window is processed inde-
-pendently, leading to semantic discrepancy across windows.
+in recent training-free open-vocabulary semantic segmentation methods to overcome limitation of the CLIP in processing high-resolution images. However, this approach introduces a new challenge: each window is processed independently, leading to semantic discrepancy across windows.
 To address this issue, we propose Global-Local Aligned
-CLIP (GLA-CLIP), a framework that facilitates compre-
-hensive information exchange across windows. Rather
+CLIP (GLA-CLIP), a framework that facilitates comprehensive information exchange across windows. Rather
 than limiting attention to tokens within individual windows,
-GLA-CLIP extends key-value tokens to incorporate contex-
-tual cues from all windows. Nevertheless, we observe a
-window bias: outer-window tokens are less likely to be at-
-tended, since query features are produced through interac-
-tions within the inner window patches, thereby lacking se-
-mantic grounding beyond their local context. To mitigate
-this, we introduce a proxy anchor, constructed by aggre-
-gating tokens highly similar to the given query from all
-windows, which provides a unified semantic reference for
-measuring similarity across both inner- and outer-window
-patches. Furthermore, we propose a dynamic normaliza-
-tion scheme that adjusts attention strength according to ob-
-ject scale by dynamically scaling and thresholding the at-
-tention map to cope with small-object scenarios. Moreover,
+GLA-CLIP extends key-value tokens to incorporate contextual cues from all windows. 
+Nevertheless, we observe a
+window bias: outer-window tokens are less likely to be attended, since query features are produced through interac-
+tions within the inner window patches, thereby lacking semantic grounding beyond their local context. To mitigate
+this, we introduce a proxy anchor, constructed by aggregating tokens highly similar to the given query from all
+windows, which provides a unified semantic reference for measuring similarity across both inner- and outer-window
+patches. Furthermore, we propose a dynamic normalization scheme that adjusts attention strength according to objectscale by dynamically scaling and thresholding the attention map to cope with small-object scenarios. Moreover,
 GLA-CLIP can be equipped on existing methods and broad
-their receptive field. Extensive experiments validate the ef-
-fectiveness of GLA-CLIP in enhancing training-free open-
+their receptive field. Extensive experiments validate the effectiveness of GLA-CLIP in enhancing training-free open-
 vocabulary semantic segmentation performance.
 ----------
 
