@@ -1,6 +1,8 @@
 # Looking Beyond the Window: Global-Local Aligned CLIP for Training-free Open-Vocabulary Semantic Segmentation (CVPR 2026)
 ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</sup>, WonJun Moon</sup>, Jae-Pil Heo</sup>
 
+[![Paper](https://img.shields.io/badge/arXiv-2603.23030-brightgreen)](https://arxiv.org/abs/2603.23030)
+
 ## Issue
 The whole contents of the code will be updated soon. 
 
