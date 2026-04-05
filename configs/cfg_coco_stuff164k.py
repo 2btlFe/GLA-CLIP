@@ -8,7 +8,7 @@ model = dict(
 
 # dataset settings
 dataset_type = 'COCOStuffDataset'
-data_root = ''
+data_root = '/workspace/hdd0/byeongcheol/TF_dataset/coco'   # Please change the root to your directory 
 
 test_pipeline = [
     dict(type='LoadImageFromFile'),

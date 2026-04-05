@@ -16,6 +16,11 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import gc
 import os
 import torch.nn as nn
+from typing import List, Tuple
+import numpy as np
+import torch.nn.functional as F
+from PIL import Image
+
 
 def dynamic_beta(x, alpha=0.2):
     return 1 + alpha * np.log1p(x)
@@ -24,23 +29,16 @@ def dynamic_gamma(x, alpha=1):
     return 1  +  alpha / (x)
 
 palette=[[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156],
-                 [190, 153, 153], [153, 153, 153], [250, 170,
-                                                    30], [220, 220, 0],
-                 [107, 142, 35], [152, 251, 152], [70, 130, 180],
-                 [220, 20, 60], [255, 0, 0], [0, 0, 142], [0, 0, 70],
-                 [0, 60, 100], [0, 80, 100], [0, 0, 230], [119, 11, 32]]
+        [190, 153, 153], [153, 153, 153], [250, 170, 30], [220, 220, 0],
+        [107, 142, 35], [152, 251, 152], [70, 130, 180],
+        [220, 20, 60], [255, 0, 0], [0, 0, 142], [0, 0, 70],
+        [0, 60, 100], [0, 80, 100], [0, 0, 230], [119, 11, 32]]
 
 def draw(img):
     ret = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
     for cls, color in enumerate(palette):
         ret[img == cls] = color
     return ret
-
-from typing import List, Tuple
-import numpy as np
-
-import torch.nn.functional as F
-from PIL import Image
 
 
 class UnNormalize(object):
@@ -62,7 +60,6 @@ class UnNormalize(object):
 
 
 def proxy_sim(ex_feats_grid, model_cfg, num_heads=12, scale=1, indices=None):
-    
     sim = torch.bmm(ex_feats_grid, ex_feats_grid.transpose(1, 2))  # [1, N, N]
     
     for mi in range(model_cfg.mini_iters):
@@ -88,7 +85,7 @@ class KV_Extension(nn.Module):
         super().__init__()
         self.cossim = nn.CosineSimilarity(dim=-1, eps=1e-6)
     
-    def forward(self, ex_feats_grid, num_heads=12, scale=1, lbl_grid=None,
+    def forward(self, ex_feats_grid, num_heads=12, scale=1, 
                  beta=1.2, gamma=3.0, indices=None, v_ext=None, model_cfg=None):
 
         h_grids, w_grids, C, H, W = ex_feats_grid.shape
@@ -100,7 +97,7 @@ class KV_Extension(nn.Module):
         ex_feats_grid = F.normalize(ex_feats_grid, dim=-1)                   
         mask_one = None          
         attn_output = []
-
+        
         v_ext = v_ext.reshape(B*num_heads, model_cfg.token_size[0], model_cfg.token_size[1], -1) \
                     .permute(0, 3, 1, 2).contiguous()                                       # [B*H, Dh, Th, Tw]
         v_ext = F.interpolate(v_ext, size=(H, W), mode='bilinear', align_corners=False)  # [B*H, Dh, H, W]
@@ -153,6 +150,10 @@ class KV_Extension(nn.Module):
                     proxy = proxy / (count_proxy + 1e-6)
                     proxy = F.normalize(proxy, dim=-1)
                     attn_weights = torch.bmm(proxy, key.transpose(1, 2))  # [1, N, N]
+            
+            if getattr(model_cfg, 'proxy_sim', False) == False:
+                attn_weights = torch.bmm(key, key.transpose(1, 2))  # [1, N, N]
+            
         else:
             attn_weights = torch.bmm(key, key.transpose(1, 2))  # [1, B*S, B*S]
 
@@ -188,7 +189,7 @@ class KV_Extension(nn.Module):
                                         device=attn_weights.device, dtype=attn_weights.dtype)
         dynamic_cutting_hp = torch.minimum(max_per_row, cutting_hp)       # [B,S,1]
         attn_weights.masked_fill_(attn_weights < dynamic_cutting_hp, float('-inf'))
-
+        
         attn_weights = F.softmax(attn_weights / model_cfg.temperature, dim=-1)  # [B,S,B*S]
 
         if torch.isnan(attn_weights).any():
@@ -227,8 +228,6 @@ class KV_Extension_ClearCLIP(nn.Module):
         v_ext = v_ext.permute(1, 0, 3, 2).reshape(num_heads, B * S, Dh)          # [H,B*S,Dh]
 
         if getattr(model_cfg, 'proxy_sim', False) or getattr(model_cfg, 'dynamic_gamma', False):
-
-
             # 1) indices mask
             indices = indices.flatten()
             indices_mask = indices.unsqueeze(0) == indices.unsqueeze(1)  # [N, N]

@@ -9,7 +9,7 @@ model = dict(
 
 # dataset settings
 dataset_type = 'PascalContext60Dataset'
-data_root = ''
+data_root = '/workspace/hdd0/byeongcheol/TF_dataset/VOCdevkit/VOC2010'  # Please change the root to your directory 
 
 test_pipeline = [
     dict(type='LoadImageFromFile'),

@@ -54,23 +54,10 @@ def parse_args():
     parser.add_argument('--beta_alpha', type=float, default=0.2, help='Dynamic beta alpha for attention mechanism. This is useful for ProxyCLIP with KV Token Extension')  # Dynamic beta alpha for attention mechanism. This is useful for ProxyCLIP with KV Token Extension
     parser.add_argument('--gamma_alpha', type=float, default=1, help='Dynamic gamma alpha for attention mechanism. This is useful for ProxyCLIP with KV Token Extension')  # Dynamic gamma alpha for attention mechanism. This is useful for ProxyCLIP with KV Token Extension
     
-    # visualization
-    parser.add_argument('--attn_visualize', action='store_true', default=False)
-    parser.add_argument('--pca_visualize', action='store_true', default=False)
-    parser.add_argument('--pca_attn_visualize', action='store_true', default=False)
-    parser.add_argument('--pca_val_visualize', action='store_true', default=False)
-    parser.add_argument('--neg_visualize', action='store_true', default=False, help='Use negative token visualization')  # Use negative token visualization
-
-    # metric
-    parser.add_argument('--mask_metric', action='store_true', default=False, help='Use mask metric for evaluation')  # Mask metric (Average of Cosine Similarity)
-
     # etc    
-    parser.add_argument('--num_cls_emb', type=int, default=1) 
-    parser.add_argument('--iteration', type=int, default=0)
     parser.add_argument('--beta', type=float, default=1.2, help='Beta hyperparameter for evaluation')
     parser.add_argument('--gamma', type=float, default=3, help='Gamma hyperparameter for evaluation')
     
-
     args = parser.parse_args()
     if 'LOCAL_RANK' not in os.environ:
         os.environ['LOCAL_RANK'] = str(args.local_rank)
@@ -81,7 +68,6 @@ def trigger_visualization_hook(cfg, args):
     default_hooks = cfg.default_hooks
     if 'visualization' in default_hooks:
         visualization_hook = default_hooks['visualization']
-        # Turn on visualization
         visualization_hook['draw'] = True
         if args.show:
             visualization_hook['show'] = True
@@ -132,8 +118,7 @@ def main():
     model_cfg.beta_alpha = args.beta_alpha
     model_cfg.gamma_alpha = args.gamma_alpha
     cfg.model.model_cfg = model_cfg
-    
-    # trigger_visualization_hook(cfg, args)  
+    trigger_visualization_hook(cfg, args)  
 
     runner = Runner.from_cfg(cfg)
     results = runner.test()    
@@ -143,7 +128,7 @@ def main():
                     'CLIP': cfg.model.clip_type,
                     'VFM': cfg.model.vfm_model,
                     'Dataset': cfg.dataset_type})
-
+    
     if runner.rank == 0:
         with open(os.path.join(cfg.work_dir, 'results.txt'), 'a') as f:
             f.write('\n')

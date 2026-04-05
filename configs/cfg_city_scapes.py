@@ -14,7 +14,7 @@ model = dict(
 
 # dataset settings
 dataset_type = 'CityscapesDataset'
-data_root = ''
+data_root = '/workspace/hdd0/byeongcheol/TF_dataset/cityscapes' # Please change the root to your directory 
 
 test_pipeline = [
     dict(type='LoadImageFromFile'),

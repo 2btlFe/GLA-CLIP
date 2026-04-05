@@ -8,11 +8,11 @@ model = dict(
 
 # dataset settings
 dataset_type = 'ADE20KDataset'
-data_root = ''
+data_root = '/workspace/hdd0/byeongcheol/TF_dataset/ADEChallengeData2016'   # Please change the root to your directory 
 
 test_pipeline = [
     dict(type='LoadImageFromFile'),
-    dict(type='Resize', scale=(2048, 336), keep_ratio=True),    # 448
+    dict(type='Resize', scale=(2048, 336), keep_ratio=True),    
     dict(type='LoadAnnotations', reduce_zero_label=True),
     dict(type='PackSegInputs')
 ]

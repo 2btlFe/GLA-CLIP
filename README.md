@@ -3,8 +3,10 @@ ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</s
 
 [![Paper](https://img.shields.io/badge/arXiv-2603.23030-brightgreen)](https://arxiv.org/abs/2603.23030)
 
-## Issue
-The whole contents of the code will be updated soon. 
+## ToDo
+The whole contents of the code will be updated soon.
+- [x] Upload 2 Crucial files (gla_clip_segmentor.py, open_clip/)
+- [] Demo
 
 ## Main Figure
 <p align="center">
@@ -101,6 +103,6 @@ If you find this project useful, please consider the following citation:
 ```
 
 ## Acknowledgements
-This repository is built based on [OpenCLIP](https://github.com/mlfoundations/open_clip), [ProxyCLIP](https://github.com/mc-lan/ProxyCLIP), [SCLIP](https://github.com/wangf3014/SCLIP) . Thanks for the great work.
+This repository is built based on [OpenCLIP](https://github.com/mlfoundations/open_clip), [ProxyCLIP](https://github.com/mc-lan/ProxyCLIP), [SCLIP](https://github.com/wangf3014/SCLIP). Thanks for the great work.
 ## License
 This project is licensed under <a rel="license" href="https://github.com/mc-lan/SmooSeg/blob/master/LICENSE">NTU S-Lab License 1.0</a>. Redistribution and use should follow this license.
