@@ -6,7 +6,7 @@ ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</s
 ## ToDo
 The whole contents of the code will be updated soon.
 - [x] Upload 2 Crucial files (gla_clip_segmentor.py, open_clip/)
-- [] Demo
+- [ ] Demo
 
 ## Main Figure
 <p align="center">
