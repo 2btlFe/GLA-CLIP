@@ -4,8 +4,8 @@ ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</s
 [![Paper](https://img.shields.io/badge/arXiv-2603.23030-brightgreen)](https://arxiv.org/abs/2603.23030)
 
 ## ToDo
-The whole contents of the code will be updated soon.
-- [x] Upload 2 Crucial files (gla_clip_segmentor.py, open_clip/)
+The whole contents of the code is now updated!! 
+- [x] (2026.04.05) Upload 2 Crucial files (gla_clip_segmentor.py, open_clip/)
 - [ ] Demo
 
 ## Main Figure
