@@ -25,7 +25,7 @@
   <!-- TODO: Same as description above -->
   <meta property="og:description" content="GLA-CLIP, a training-free method for OVSS that resolves inconsistent predictions across sliding windows">
   <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://2btlFe.com/GLA-CLIP">
+  <meta property="og:url" content="https://github.com/2btlFe/GLA-CLIP">
   <!-- TODO: Create a 1200x630px preview image and update path -->
   <meta property="og:image" content="https://github.com/2btlFe/GLA-CLIP/tree/project_page/static/gla-clip-teaser.png">
   <meta property="og:image:width" content="1200">
@@ -139,7 +139,7 @@
       "@type": "Organization",
       "name": "CVPR 2026"
     },
-    "url": "https://2btlFe.com/GLA-CLIP",
+    "url": "https://github.com/2btlFe/GLA-CLIP",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
     "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
     "abstract": "A sliding-window inference strategy is commonly adopted in recent training-free open-vocabulary semantic segmentation methods to overcome limitation of the CLIP in processing high-resolution images. However, this approach introduces a new challenge: each window is processed independently, leading to semantic discrepancy across windows. To address this issue, we propose Global-Local Aligned CLIP~(GLA-CLIP), a framework that facilitates comprehensive information exchange across windows. Rather than limiting attention to tokens within individual windows, GLA-CLIP extends key-value tokens to incorporate contextual cues from all windows. Nevertheless, we observe a window bias: outer-window tokens are less likely to be attended, since query features are produced through interactions within the inner window patches, thereby lacking semantic grounding beyond their local context. To mitigate this, we introduce a proxy anchor, constructed by aggregating tokens highly similar to the given query from all windows, which provides a unified semantic reference for measuring similarity across both inner- and outer-window patches. Furthermore, we propose a dynamic normalization scheme that adjusts attention strength according to object scale by dynamically scaling and thresholding the attention map to cope with small-object scenarios. Moreover, GLA-CLIP can be equipped on existing methods and broad their receptive field. Extensive experiments validate the effectiveness of GLA-CLIP in enhancing training-free open-vocabulary semantic segmentation performance.",
@@ -148,7 +148,7 @@
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://2btlFe.com/GLA-CLIP"
+      "@id": "https://github.com/2btlFe/GLA-CLIP"
     },
     "about": [
       {
@@ -245,11 +245,17 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">ByeongCheol Lee</a><sup>*</sup>,</span>
+                <a href="https://2btlfe.github.io/" target="_blank">ByeongCheol Lee</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Hyun Seok Seong</a><sup>*</sup>,</span>
+                  <a href="https://hynnsk.github.io/" target="_blank">Hyun Seok Seong</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank"> Sangeek Hyun</a>
+                    <a href="https://hse1032.github.io/" target="_blank"> Sangeek Hyun</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.gilhanpark.me/en" target="_blank"> Gilhan Park</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://wjun0830.github.io/" target="_blank"> WonJun Moon</a>
                   </span>
                   </div>
 
@@ -262,7 +268,7 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2603.23030.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -339,7 +345,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            A sliding-window inference strategy is commonly adopted in recent training-free open-vocabulary semantic segmentation methods to overcome limitation of the CLIP in processing high-resolution images. However, this approach introduces a new challenge: each window is processed independently, leading to semantic discrepancy across windows. To address this issue, we propose Global-Local Aligned CLIP~(GLA-CLIP), a framework that facilitates comprehensive information exchange across windows. Rather than limiting attention to tokens within individual windows, GLA-CLIP extends key-value tokens to incorporate contextual cues from all windows. Nevertheless, we observe a window bias: outer-window tokens are less likely to be attended, since query features are produced through interactions within the inner window patches, thereby lacking semantic grounding beyond their local context. To mitigate this, we introduce a proxy anchor, constructed by aggregating tokens highly similar to the given query from all windows, which provides a unified semantic reference for measuring similarity across both inner- and outer-window patches. Furthermore, we propose a dynamic normalization scheme that adjusts attention strength according to object scale by dynamically scaling and thresholding the attention map to cope with small-object scenarios. Moreover, GLA-CLIP can be equipped on existing methods and broad their receptive field. Extensive experiments validate the effectiveness of GLA-CLIP in enhancing training-free open-vocabulary semantic segmentation performance.
           </p>
         </div>
       </div>
