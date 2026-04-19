@@ -2,6 +2,7 @@
 ByeongCheol Lee</sup>, Hyun Seok Seong</sup>, Sangeek Hyun</sup>, Gilhan Park</sup>, WonJun Moon</sup>, Jae-Pil Heo</sup>
 
 [![Paper](https://img.shields.io/badge/arXiv-2603.23030-brightgreen)](https://arxiv.org/abs/2603.23030)
+[![Home Page](https://img.shields.io/badge/Project-<Website>-blue.svg)](https://2btlfe.github.io/GLA-CLIP/) 
 
 ## ToDo
 The whole contents of the code is now updated!! 
