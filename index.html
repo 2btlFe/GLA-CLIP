@@ -108,6 +108,87 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
+  <style>
+    .bal-container-small {
+      position: relative;
+      overflow: hidden;
+      cursor: col-resize;
+      user-select: none;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    }
+    .bal-container-small img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    .bal-after {
+      position: absolute;
+      inset: 0;
+    }
+    .bal-before {
+      position: absolute;
+      inset: 0;
+      width: 50%;
+      overflow: hidden;
+    }
+    .bal-before-inset {
+      position: absolute;
+      inset: 0;
+      width: var(--bal-container-width, 100%);
+    }
+    .bal-before-inset img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .bal-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: #fff;
+      transform: translateX(-50%);
+      cursor: col-resize;
+    }
+    .bal-handle::before,
+    .bal-handle::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 36px;
+      height: 36px;
+      background: #fff;
+      border-radius: 50%;
+      top: 50%;
+      margin-top: -18px;
+    }
+    .bal-handle::before {
+      display: none;
+    }
+    .bal-handle::after {
+      background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Cpath fill='%23555' d='M8 5l-7 7 7 7V5zm8 0v14l7-7-7-7z'/%3E%3C/svg%3E") center/18px no-repeat;
+      box-shadow: 0 1px 6px rgba(0,0,0,.4);
+    }
+    .bal-label {
+      position: absolute;
+      bottom: 8px;
+      background: rgba(0,0,0,0.55);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      pointer-events: none;
+      letter-spacing: 0.03em;
+    }
+    .bal-label-left  { left: 8px; }
+    .bal-label-right { right: 8px; }
+  </style>
   
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
@@ -177,6 +258,10 @@
     ]
   }
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 </head>
 <body>
 
@@ -186,53 +271,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -257,11 +295,14 @@
                   <span class="author-block">
                     <a href="https://wjun0830.github.io/" target="_blank"> WonJun Moon</a>,
                   </span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/site/vclabskku/people?authuser=0" target="_blank"> Jae-Pil Heo</a>
+                  </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">VCLAB<br>CVPR 2026</span>
+                    <span class="author-block">VCLAB<br><span style="color: #e8a020; font-weight: 700; letter-spacing: 0.04em;">CVPR 2026</span></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -277,20 +318,9 @@
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/GLA-CLIP" target="_blank"
+                    <a href="https://github.com/2btlFe/GLA-CLIP" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -318,24 +348,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -355,122 +367,339 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- Motivation -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motivation</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+           <img src="static/images/motivation.png" alt="GLA-CLIP Motivation" loading="lazy"/>
+          <p>
+             (a) We evaluate segmentation inconsistency using the
+              Boundary Error Rate (BER). BER is defined as the proportion of
+              pixels near adjacent window boundaries where predicted labels
+              differ despite identical ground-truth. ProxyCLIP yields high BER
+              due to its lack of cross-window interaction, whereas BER is significantly reduced in ours by incorporating global context into attention process. 
+          </p>
+          <p>    
+              (b) ProxyCLIP exhibits grid artifacts (marked with white circles), caused by the limited receptive field within individual windows. In contrast, ours mitigates these artifacts by leveraging contextual information beyond
+              local windows.
+          </p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End paper Motivation -->
 
 
+<!-- Architecture -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <img src="static/images/gla-clip-teaser.png" alt="GLA-CLIP Architecture" loading="lazy"/>
+          <p>
+            <strong>Sec 3.2 Key-Value Extension:</strong>
+            We construct global key-value tokens by aggregating VFM features and CLIP value tokens across all windows, enabling attention to access full-image context.
+          </p>
 
+          <p>
+          \[
+          K_{\text{global}} = [F^{(1)}_{\text{vfm}}; F^{(2)}_{\text{vfm}}; \cdots; F^{(L)}_{\text{vfm}}] \in \mathbb{R}^{(LN) \times D}
+          \]
+          </p>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+          <p>
+          \[
+          V_{\text{global}} = [V^{(1)}; V^{(2)}; \cdots; V^{(L)}] \in \mathbb{R}^{(LN) \times D}
+          \]
+          </p>
+          <p>
+            <strong>Sec 3.3 Proxy-Based Attention:</strong>
+            We mitigate inner-window locality bias by replacing queries with a proxy aggregated from high-similarity tokens across all windows, enabling globally consistent attention.
+          </p>
+
+          <div style="text-align: center;">
+            \[
+            Q^{(t)}_i =
+            \frac{1}{\left| P^{(t-1)}_i \right|}
+            \sum_{j \in P^{(t-1)}_i} K_{\text{global}, j}
+            \]
+          </div>
+          <p>
+            <strong>Sec 3.4 Dynamic Normalization:</strong>
+            We introduce scale-aware dynamic normalization that adaptively shifts and scales attention based on object size and global context, suppressing noise from irrelevant tokens.
+          </p>
+
+          <div style="text-align: center;">
+            \[
+            u = 1 + \lambda_1 \log(1 + L)
+            \]
+          </div>
+
+          <div style="text-align: center;">
+            \[
+            w_i = 1 + \frac{\lambda_2}{|P_i|}
+            \]
+          </div>
           
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div style="background: #f0f4ff; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 1.2rem 1.6rem; margin: 1.2rem auto; max-width: 750px;">
+            <p style="text-align: center; font-weight: 700; font-size: 1.35em; margin-bottom: 0.8rem; color: #1e3a8a;">
+              Final Attention Form
+            </p>
+            <ul style="margin: 0; padding-left: 1.4rem; font-size: 0.95em;">
+              <li style="margin-bottom: 0.4rem;">
+                <strong>Global Context Query:</strong>
+                Queries are replaced with proxy representations that aggregate global semantic context.
+              </li>
+              <li style="margin-bottom: 0.4rem;">
+                <strong>Window-Invariant Key:</strong>
+                Keys are constructed from global tokens, independent of local window partitioning.
+              </li>
+              <li>
+                <strong>Scale-Aware Attention:</strong>
+                Attention is dynamically normalized to account for object scale and the increased number of tokens, enabling effective masking and sharpening.
+              </li>
+            </ul>
+            <div style="text-align: center; margin-top: 1rem;">
+              \[
+              \mathbf{S}_{\text{proxy}} = \mathbf{Q}_{\text{proxy}} \cdot \mathbf{K}_{\text{global}}^\top \in \mathbb{R}^{N \times (BN)}
+              \]
+            </div>
+            <div style="text-align: center; margin-top: 0.5rem;">
+              \[
+              \mathrm{Attn}_i = w_i \left(
+              \mathbf{S}_{\text{proxy}} - u \cdot \frac{1}{NL} \sum_{j=1}^{NL} [\mathbf{S}_{\text{proxy}}]_{ij}
+              \right)
+              \]
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End paper Architecture -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+<!-- Attention Visualization -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Attention Visualization</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <img src="static/images/attention_visualization.png" alt="GLA-CLIP Attention Visualization" loading="lazy"/>
+          <ul>
+            <li>
+              <strong>(a) Locality Bias:</strong>
+              Attention is initially concentrated within the inner window, showing limited ability to capture object-level structure. Although introducing Key-Value Extension, it remains biased and inconsistent across window boundaries.
+            </li>
+            <li>
+              <strong>(b) Proxy-Based Attention:</strong>
+              Introducing proxy queries enables globally consistent attention, naturally extending across the entire object and overcoming window bias.
+            </li>
+            <li>
+              <strong>(c) Dynamic Normalization:</strong>
+              Scale-aware normalization suppresses irrelevant regions, allowing the model to focus on meaningful object areas and produce cleaner, more precise attention maps.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End paper Attention Visualization -->
 
 
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<!-- Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <img src="static/images/Main Table.png" alt="GLA-CLIP Results" loading="lazy"/>
+          <ul>
+            <li>
+              <strong>Flexible Adaptation:</strong>
+              Our method can be seamlessly applied to various CLIP-based baselines, including ClearCLIP, SCLIP, and ProxyCLIP.
+            </li>
+            <li>
+              <strong>Dataset-Agnostic:</strong>
+              It does not require any dataset-specific hyperparameter tuning, ensuring robust generalization across different benchmarks.
+            </li>
+            <li>
+              <strong>Strong Performance:</strong>
+              Despite being training-free, our approach outperforms training-based baselines such as CLIP-DINOiser.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+<!-- End paper Results -->
+
+
+
+<!-- Visualization -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Visualization</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+         
+<!-- Slider Visualization Grid (2 rows x 3 cols) -->
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0;">
+
+  <div class="bal-container-small">
+    <div class="bal-after">
+      <img src="static/images/VOC21/voc21_ours.png">
+    </div>
+    <div class="bal-before">
+      <div class="bal-before-inset">
+        <img src="static/images/VOC21/voc21_proxy.png">
+      </div>
+    </div>
+    <div class="bal-handle"></div>
+    <span class="bal-label bal-label-left">ProxyCLIP</span>
+    <span class="bal-label bal-label-right">Ours</span>
+  </div>
+
+  <div class="bal-container-small">
+    <div class="bal-after">
+      <img src="static/images/ADE20k/ADE_Ours.png">
+    </div>
+    <div class="bal-before">
+      <div class="bal-before-inset">
+        <img src="static/images/ADE20k/ADE_Proxy.png">
+      </div>
+    </div>
+    <div class="bal-handle"></div>
+    <span class="bal-label bal-label-left">ProxyCLIP</span>
+    <span class="bal-label bal-label-right">Ours</span>
+  </div>
+
+  <div class="bal-container-small">
+    <div class="bal-after">
+      <img src="static/images/ADE20k/ADE2_Ours.png">
+    </div>
+    <div class="bal-before">
+      <div class="bal-before-inset">
+        <img src="static/images/ADE20k/ADE2_Proxy.png">
+      </div>
+    </div>
+    <div class="bal-handle"></div>
+    <span class="bal-label bal-label-left">ProxyCLIP</span>
+    <span class="bal-label bal-label-right">Ours</span>
+  </div>
+
+  <div class="bal-container-small">
+    <div class="bal-after">
+      <img src="static/images/Context60/Context60_Ours.png">
+    </div>
+    <div class="bal-before">
+      <div class="bal-before-inset">
+        <img src="static/images/Context60/Context60_Proxy.png">
+      </div>
+    </div>
+    <div class="bal-handle"></div>
+    <span class="bal-label bal-label-left">ProxyCLIP</span>
+    <span class="bal-label bal-label-right">Ours</span>
+  </div>
+
+  <div class="bal-container-small">
+    <div class="bal-after">
+      <img src="static/images/Cityscapes/City_Ours.png">
+    </div>
+    <div class="bal-before">
+      <div class="bal-before-inset">
+        <img src="static/images/Cityscapes/City_Proxy.png">
+      </div>
+    </div>
+    <div class="bal-handle"></div>
+    <span class="bal-label bal-label-left">ProxyCLIP</span>
+    <span class="bal-label bal-label-right">Ours</span>
+  </div>
+
+  <div class="bal-container-small">
+    <div class="bal-after">
+      <img src="static/images/Cityscapes/City2_Ours.png">
+    </div>
+    <div class="bal-before">
+      <div class="bal-before-inset">
+        <img src="static/images/Cityscapes/City2_Proxy.png">
+      </div>
+    </div>
+    <div class="bal-handle"></div>
+    <span class="bal-label bal-label-left">ProxyCLIP</span>
+    <span class="bal-label bal-label-right">Ours</span>
+  </div>
+
+</div>
+<!-- End Slider Visualization Grid -->
+<script>
+(function() {
+  function initSlider(container) {
+    var before = container.querySelector('.bal-before');
+    var beforeInset = container.querySelector('.bal-before-inset');
+    var handle = container.querySelector('.bal-handle');
+
+    function setPosition(x) {
+      var rect = container.getBoundingClientRect();
+      var pct = Math.min(100, Math.max(0, (x - rect.left) / rect.width * 100));
+      before.style.width = pct + '%';
+      beforeInset.style.width = rect.width + 'px';
+      handle.style.left = pct + '%';
+    }
+
+    container.addEventListener('mousemove', function(e) {
+      setPosition(e.clientX);
+    });
+
+    container.addEventListener('mouseleave', function() {
+      before.style.width = '50%';
+      var rect = container.getBoundingClientRect();
+      beforeInset.style.width = rect.width + 'px';
+      handle.style.left = '50%';
+    });
+
+    container.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      setPosition(e.touches[0].clientX);
+    }, { passive: false });
+  }
+
+  document.querySelectorAll('.bal-container-small').forEach(initSlider);
+})();
+</script>
+          <p>
+            We show visualizations of open-vocabulary semantic segmentation results, highlighting the effectiveness of our method in mitigating the grid artifact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper Attention Visualization -->
+
+
+
+
+
+
 
 
 
@@ -484,12 +713,11 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{lee2026gla_clip,
+  title={Looking Beyond the Window: Global-Local Aligned CLIP for Training-free Open-Vocabulary Semantic Segmentation},
+  author={Lee, ByeongCheol, Seong, Hyun Seok, Hyun, Sangeek, Park, Gilhan, Moon, WonJun and Heo, Jae-Pil},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2026}
 }</code></pre>
     </div>
 </section>
