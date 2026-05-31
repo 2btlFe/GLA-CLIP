@@ -26,6 +26,11 @@
 /* Smooth scrolling for better UX */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -78,8 +83,20 @@ body {
     transform: translateY(-2px);
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.link-block {
+  display: inline-flex;
+}
+
 .link-block a {
-    margin: 8px 4px;
+    margin: 4px;
 }
 
 .dnerf {
@@ -646,13 +663,23 @@ code {
 
 /* MathJax equation overflow */
 mjx-container {
-  overflow-x: auto;
-  overflow-y: hidden;
   max-width: 100%;
 }
 
 mjx-container[display="true"] {
   display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 4px;
+}
+
+/* Method section highlight box */
+.method-highlight-box {
+  overflow-x: auto;
+}
+
+.method-highlight-box mjx-container[display="true"] {
+  min-width: 0;
 }
 
 /* Mobile Responsive Improvements */
@@ -747,14 +774,8 @@ mjx-container[display="true"] {
     max-width: 90vw;
   }
   
-  .link-block {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-
-  .button {
-    width: 100%;
-    justify-content: center;
+  .method-highlight-box {
+    padding: 1rem 0.75rem !important;
   }
 
   .visualization-grid {
