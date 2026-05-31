@@ -26,11 +26,6 @@
 /* Smooth scrolling for better UX */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 body {
@@ -661,25 +656,29 @@ code {
   box-shadow: var(--shadow-xl);
 }
 
-/* MathJax equation overflow */
+/* MathJax equation overflow — mobile: scroll within the block */
 mjx-container {
   max-width: 100%;
 }
 
-mjx-container[display="true"] {
-  display: block;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 4px;
-}
+@media screen and (max-width: 768px) {
+  mjx-container[display="true"] {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* constrain to viewport so overflow-x actually triggers */
+    max-width: calc(100vw - 3rem);
+    padding-bottom: 6px;
+  }
 
-/* Method section highlight box */
-.method-highlight-box {
-  overflow-x: auto;
-}
+  .method-highlight-box {
+    overflow-x: auto;
+    max-width: 100%;
+  }
 
-.method-highlight-box mjx-container[display="true"] {
-  min-width: 0;
+  .method-highlight-box mjx-container[display="true"] {
+    max-width: calc(100vw - 5rem);
+  }
 }
 
 /* Mobile Responsive Improvements */
