@@ -22,6 +22,7 @@ do
                 --KV_token_extension \
                 --proxy_sim \
                 --mini_iters ${mini_iters} \
+                --initial_crit_pos ${initial_crit_pos} \
                 --dynamic_beta \
                 --beta_alpha ${beta_alpha} \
                 --dynamic_gamma \
